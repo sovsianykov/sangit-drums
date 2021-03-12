@@ -3,7 +3,7 @@ import TextTransition, { presets } from "react-text-transition";
 import '../../index.scss'
 import {Grid} from "@material-ui/core";
 const TEXTS = [
-    "               ",
+    "Барабаны для всех! ",
     "Oсознанная игра "
 
 
@@ -24,19 +24,15 @@ const Home = () => {
 
     return (
         <Grid container   className='hero' >
-        <Grid item id='home-hero' xs={12}  sm={6}   mt={2} >
+        <Grid item id='home-hero' xs={12}  sm={6}   mt={3} >
             <h1 >
               SANGIT DRUM
             </h1>
             <h2>
-                Барабаны для всех!
-            </h2>
-            <h2 id= 'anime'>
-            {/*<TextTransition*/}
-            {/*    text={ TEXTS[index % TEXTS.length] }*/}
-            {/*    springConfig={ presets.molasses }*/}
-            {/*/>*/}
-                Oсознанная игра
+            <TextTransition
+                text={ TEXTS[index % TEXTS.length] }
+                springConfig={ presets.molasses }
+            />
             </h2>
         </Grid>
         </Grid>

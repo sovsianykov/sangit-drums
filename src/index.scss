@@ -29,43 +29,12 @@ code {
       letter-spacing: .1em;
     }
      h2  {
-      color: #e3d5af;
-       font-family:  BlinkMacSystemFont, sans-serif;
+      color: navajowhite;
        text-align: left;
       font-size: 25px;
-      font-weight: 400;
-       margin-top: 0;
-       letter-spacing: .15em;
-       text-shadow: 0  0 3px #282c34;
-       &#anime {
-         animation : 10s animation1 4s forwards ease-in-out ;
-         animation-iteration-count: infinite;
-         opacity: 0;
-
-
-
-       }
+      font-weight: 300;
+      letter-spacing: .2em;
 
     }
   }
-}
-@keyframes animation1 {
-    from {
-      opacity: 0;
-      margin-top: 0;
-      letter-spacing: .15em;
-
-
-    }
-     50% {
-       opacity: 1;
-       margin-top: 0;
-       letter-spacing: .2em;
-
-     }
-   to {
-     opacity: 0;
-     margin-top: 100px;
-     letter-spacing: 1.5em;
-   }
 }
