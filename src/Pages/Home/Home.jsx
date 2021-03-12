@@ -17,7 +17,7 @@ const Home = () => {
     React.useEffect(() => {
         const intervalId = setInterval(() =>
                 setIndex(index => index + 1),
-            5000 // every 3 seconds
+            7000 // every 3 seconds
         );
         return () => clearTimeout(intervalId);
     }, []);
@@ -31,7 +31,7 @@ const Home = () => {
             <h2>
             <TextTransition
                 text={ TEXTS[index % TEXTS.length] }
-                springConfig={ presets.molasses }
+                springConfig={ presets.slow }
             />
             </h2>
         </Grid>
