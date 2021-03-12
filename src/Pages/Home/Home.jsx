@@ -3,8 +3,9 @@ import TextTransition, { presets } from "react-text-transition";
 import '../../index.scss'
 import {Grid} from "@material-ui/core";
 const TEXTS = [
-    "SANGIT",
-    "DRUMS",
+    "Sangit Drums  ",
+    "проект Сергея Табунщика"
+
 
 ];
 
