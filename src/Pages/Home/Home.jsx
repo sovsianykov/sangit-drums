@@ -3,7 +3,8 @@ import TextTransition, { presets } from "react-text-transition";
 import '../../index.scss'
 import {Grid} from "@material-ui/core";
 const TEXTS = [
-    "SANGIT DRUM  "
+    "Барабаны для всех! ",
+    "Oсознанная игра "
 
 
 
@@ -16,20 +17,23 @@ const Home = () => {
     React.useEffect(() => {
         const intervalId = setInterval(() =>
                 setIndex(index => index + 1),
-            3000 // every 3 seconds
+            5000 // every 3 seconds
         );
         return () => clearTimeout(intervalId);
     }, []);
 
     return (
-        <Grid container xs={12}  className='hero' >
-        <Grid item id='home-hero' xs={6} mt={8} sm={12}>
-            <h1  className='titleHero'>
-                <TextTransition
-                    text={ TEXTS[index % TEXTS.length] }
-                    springConfig={ presets.molasses }
-                />
+        <Grid container   className='hero' >
+        <Grid item id='home-hero' xs={12}  sm={6}   mt={3} >
+            <h1 >
+              SANGIT DRUM
             </h1>
+            <h2>
+            <TextTransition
+                text={ TEXTS[index % TEXTS.length] }
+                springConfig={ presets.molasses }
+            />
+            </h2>
         </Grid>
         </Grid>
     );
