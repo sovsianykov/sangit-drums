@@ -15,7 +15,7 @@ const theme = createMuiTheme({
             main: '#fefefe',
         },
         secondary: {
-            main: '#3e4f6a',
+            main: "rgba(23, 37, 42, 1)",
         },
     },
 });
@@ -72,7 +72,7 @@ class Layout extends Component {
                         <ListItemIcon>
                             <PersonIcon className={classes.icon} />
                         </ListItemIcon>
-                        <ListItemText primary="Log in" />
+                        <ListItemText primary="Home" />
                     </ListItem>
                 </List>
             </div>
@@ -95,7 +95,7 @@ class Layout extends Component {
                                             <MenuIcon />
                                         </IconButton>
                                         <Typography variant="h6" color="inherit" className={classes.title}>
-                                            New app
+                                            Drum School
                                         </Typography>
                                     </Toolbar>
                                 </AppBar>
