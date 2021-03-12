@@ -3,7 +3,7 @@ import TextTransition, { presets } from "react-text-transition";
 import '../../index.scss'
 import {Grid} from "@material-ui/core";
 const TEXTS = [
-    "Барабаны для всех! ",
+    "               ",
     "Oсознанная игра "
 
 
@@ -28,6 +28,9 @@ const Home = () => {
             <h1 >
               SANGIT DRUM
             </h1>
+            <h2>
+                Барабаны для всех!
+            </h2>
             <h2>
             <TextTransition
                 text={ TEXTS[index % TEXTS.length] }
