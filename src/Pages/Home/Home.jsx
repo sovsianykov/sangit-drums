@@ -31,7 +31,7 @@ const Home = () => {
             <h2>
             <TextTransition
                 text={ TEXTS[index % TEXTS.length] }
-                springConfig={ presets.slow }
+                springConfig={ presets.molasses }
             />
             </h2>
         </Grid>
