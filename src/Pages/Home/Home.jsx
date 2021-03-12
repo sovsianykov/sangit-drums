@@ -24,18 +24,19 @@ const Home = () => {
 
     return (
         <Grid container   className='hero' >
-        <Grid item id='home-hero' xs={12}  sm={6}   mt={3} >
+        <Grid item id='home-hero' xs={12}  sm={6}   mt={2} >
             <h1 >
               SANGIT DRUM
             </h1>
             <h2>
                 Барабаны для всех!
             </h2>
-            <h2>
-            <TextTransition
-                text={ TEXTS[index % TEXTS.length] }
-                springConfig={ presets.molasses }
-            />
+            <h2 id= 'anime'>
+            {/*<TextTransition*/}
+            {/*    text={ TEXTS[index % TEXTS.length] }*/}
+            {/*    springConfig={ presets.molasses }*/}
+            {/*/>*/}
+                Oсознанная игра
             </h2>
         </Grid>
         </Grid>
