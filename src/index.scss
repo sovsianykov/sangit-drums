@@ -49,16 +49,13 @@ code {
     color: #eaba7f;
 
     opacity: 0;
-    letter-spacing: .26em;
-    font-size: 24px;
 
 
   }
   50%{
     color: white;
     opacity: 1;
-    letter-spacing: .25em;
-    font-size: 25px;
+
    60% {
      opacity: 0;
    }
@@ -66,7 +63,7 @@ code {
   }
   99% {
     opacity: 0;
-    font-size: 25px;
+
 
 
   }
