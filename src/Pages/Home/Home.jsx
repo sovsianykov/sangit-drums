@@ -1,9 +1,12 @@
-import React                       from "react";
+import React from "react";
 import '../../index.scss'
 import {Grid} from "@material-ui/core";
 
 
+
 const Home = () => {
+
+
 
 
     return (
@@ -15,9 +18,9 @@ const Home = () => {
             <h2>
                 Барабаны для всех!
             </h2>
-            <h2 id='anime'>
-                Oсознанная игра
-            </h2>
+            {/*<h2 id='anime' className='pseudo'>*/}
+            {/*    /!*Oсознанная игра*!/*/}
+            {/*</h2>*/}
         </Grid>
         </Grid>
     );
