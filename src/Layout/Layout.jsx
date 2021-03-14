@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import './Layout.scss';
 import { Box, List, Divider, ListItem, ListItemIcon, ListItemText, Hidden, Drawer, Typography, AppBar, Toolbar, IconButton } from '@material-ui/core';
 import PersonIcon from '@material-ui/icons/Person';
-import Help from '@material-ui/icons/Help';
+// import Help from '@material-ui/icons/Help';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { ProjectsRoute, HomeRoute } from '../Routing';
 import { Link } from "react-router-dom";
+import {HomeOutlined} from "@material-ui/icons";
 const drawerWidth = 250;
 const theme = createMuiTheme({
     palette: {
@@ -51,6 +52,9 @@ class Layout extends Component {
     handleDrawerToggle = () => {
         this.setState(state => ({ mobileOpen: !state.mobileOpen }));
     };
+    menuButton = {
+        display: "block"
+    };
     render() {
         const { classes } = this.props;
         const { mobileOpen } = this.state;
@@ -61,9 +65,9 @@ class Layout extends Component {
                     <ListItem button component={Link} to={HomeRoute}
                               onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
-                            <Help className={classes.icon} />
+                            <HomeOutlined className={classes.icon} />
                         </ListItemIcon>
-                        <ListItemText primary="About" />
+                        <ListItemText primary="Home" />
                     </ListItem>
                     <Divider />
                     <ListItem
@@ -72,7 +76,7 @@ class Layout extends Component {
                         <ListItemIcon>
                             <PersonIcon className={classes.icon} />
                         </ListItemIcon>
-                        <ListItemText primary="Home" />
+                        <ListItemText primary="About" />
                     </ListItem>
                 </List>
             </div>
