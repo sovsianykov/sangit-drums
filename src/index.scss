@@ -18,7 +18,7 @@ code {
   display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-left: 7%;
+    padding-left: 10%;
 
     h1 {
 
@@ -36,50 +36,38 @@ code {
       letter-spacing: .25em;
        text-shadow: 0  0 3px #282c34;
        margin-top: 0;
-       &::after {
-         content: 'Осознанная игра';
-         height: 60px;
-         padding-top: 30px;
-         display: block;
-         background: #040301;
-         z-index: 333;
-         position: relative;
-         margin-top: -25px;
-         animation: animate1 15s forwards 5s ease-in-out infinite ;
-         opacity: 0;
-       }
-
-
+        &#anime {
+          animation: animate1 20s forwards 3s ease-in-out infinite ;
+          opacity: 0;
+        }
 
     }
   }
 }
 @keyframes animate1  {
   from {
-    margin-top: -25px;
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-    margin-top: -25px;
-  }
-  50%{
-    margin-top: 0;
     color: #eaba7f;
 
-    //color: #ffffff;
-    opacity: 1;
+    opacity: 0;
+    letter-spacing: .26em;
+    font-size: 24px;
 
+
+  }
+  50%{
+    color: white;
+    opacity: 1;
+    letter-spacing: .25em;
+    font-size: 25px;
    60% {
      opacity: 0;
-     margin-top: -25px;
-
-
    }
+
   }
   99% {
     opacity: 0;
-    margin-top: 0;
+    font-size: 25px;
+
 
   }
   to {
