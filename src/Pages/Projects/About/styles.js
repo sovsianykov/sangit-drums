@@ -2,10 +2,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
     root: {
-
-        maxWidth: '100%',
+        width: '100%',
         background: "#FAFAFA",
-        height: "110vh",
+        height: "1500px",
         paddingTop: 10 ,
 
 
@@ -21,7 +20,7 @@ export default makeStyles((theme) => ({
         color: "#3c3c3c",
         paddingLeft: 40,
         paddingRight: 40,
-        marginLeft:'20px',
+        // marginLeft:'20px',
         marginBottom:40,
         textIndent: 40
 
@@ -42,7 +41,7 @@ export default makeStyles((theme) => ({
         marginBottom: theme.spacing(3),
         padding: theme.spacing(2),
         [theme.breakpoints.down('xs')]: {
-            width: '100%',
+            width: '90%',
             marginTop: 60,
         },
         [theme.breakpoints.up(600 + theme.spacing(3) * 2)]: {

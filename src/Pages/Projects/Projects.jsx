@@ -11,10 +11,11 @@ const audio = new Audio(song)
 export default function Projects() {
     useEffect(() =>{
         audio.play()
+        audio.volume = 0.1;
     },[])
     const pages  = [
-        {title : "Кто такой Сергей Табунщик" , src : ""  },
         {title : "О проекте" , src : ""  },
+        {title : "Фото" , src : ""  },
         {title : "Барабанная Йога" , src : ""  },
         {title : "Музыка" , src : ""  },
         {title : "Видео" , src : ""  },
