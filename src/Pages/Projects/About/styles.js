@@ -23,6 +23,15 @@ export default makeStyles((theme) => ({
         // marginLeft:'20px',
         marginBottom:40,
         textIndent: 40
+    },
+    textSec : {
+        textIndent: '25px',
+        color: "#3c3c3c",
+        paddingLeft: 40,
+        paddingRight: 40,
+        marginBottom: 15,
+        lineHeight: '25px',
+        fontSize : '18px'
 
 
 
