@@ -4,7 +4,7 @@ import {Box, Paper, Typography,Grid} from "@material-ui/core";
 import useStyles from './styles'
 import ava from '../../../assets/forGallery/avatab.jpg';
 import aboutPr from '../../../assets/img/aboutPR.jpg';
-import Footer1 from "../../Footer/Footer1";
+// import Footer1 from "../../Footer/Footer1";
 
 
 
@@ -47,7 +47,7 @@ import Footer1 from "../../Footer/Footer1";
                 <Grid container  justify='center'>
                     {/*<Grid item xs='auto' sm={1} ></Grid>*/}
                     <Grid item xs={12} sm={11} md={11}  >
-                        <Paper  className={classes.paper}>
+                        <Paper  className={classes.paper} style={{marginTop : "0"}}>
                             <Typography variant='h4' className={classes.title}>
                                 Проект «Sangit-Drum» имеет несколько целей, связанных с игрой на барабанах.
 
