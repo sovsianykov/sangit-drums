@@ -22,7 +22,7 @@ export default function Projects() {
     ,]
     return (
         <Box  >
-            <Grid id='list'  container  >
+            <Grid id='list'  container style={{ marginTop : '3em'}} >
                 {pages.map((card,i) => {
                     return (
                         <Grid  component={Link} item to='/whois/' xs={12} sm = {4} key={i} className='cardGridItem'  >
@@ -31,8 +31,6 @@ export default function Projects() {
                     )
                 })}
             </Grid>
-
-
         </Box>
     );
 };

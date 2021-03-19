@@ -2,17 +2,16 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
     root: {
-         position: "relative",
-        top: -48,
+
         maxWidth: '100%',
         background: "#FAFAFA",
         height: "110vh",
         paddingTop: 10 ,
-        paddingLeft: 20,
-        paddingRight: 20,
+
 
     },
     title : {
+        marginTop: 40,
         color: "#3c3c3c",
         textAlign: "center",
         marginBottom: "1rem",
@@ -43,7 +42,7 @@ export default makeStyles((theme) => ({
         marginBottom: theme.spacing(3),
         padding: theme.spacing(2),
         [theme.breakpoints.down('xs')]: {
-            width: '70%',
+            width: '100%',
             marginTop: 60,
         },
         [theme.breakpoints.up(600 + theme.spacing(3) * 2)]: {
