@@ -3,6 +3,8 @@ import * as React from 'react';
 import PageCard from '../../componens/PpageCard'
 import {Box,Grid} from "@material-ui/core";
 import song from '../../assets/audio/song.mp3'
+import { Link } from "react-router-dom";
+
 import {useEffect} from "react";
 
 const audio = new Audio(song)
@@ -23,7 +25,7 @@ export default function Projects() {
             <Grid id='list'  container  >
                 {pages.map((card,i) => {
                     return (
-                        <Grid item xs={12} sm = {4} key={i} className='cardGridItem'  >
+                        <Grid  component={Link} item to='/whois/' xs={12} sm = {4} key={i} className='cardGridItem'  >
                             <PageCard  pages={card}  />
                         </Grid>
                     )
