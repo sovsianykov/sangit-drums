@@ -14,7 +14,7 @@ class Routing extends React.Component {
             <Layout>
                 <Route path={HomeRoute} exact component={Home} />
                 <Route path={ProjectsRoute} component={Projects} />
-                <Route path={WhoIsRoute} component={WhoIs} />
+                <Route path={WhoIsRoute} exact component={WhoIs} />
             </Layout >
         );
     }
