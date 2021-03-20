@@ -2,6 +2,7 @@
 import * as React from 'react';
 import {Box, Paper, Typography,Grid} from "@material-ui/core";
 import useStyles from './styles'
+import Album from "./Album.Jsx";
 
 
 
@@ -16,6 +17,10 @@ const Music = () => {
                             <Typography variant="h4" className={classes.title}>
                                 Альбомы
                             </Typography>
+                            <Grid container>
+                                <Grid item xs={12} sm={3} md={3}>
+                                </Grid>
+                            </Grid>
                         </Paper>
                     </Grid>
                 </Grid>
