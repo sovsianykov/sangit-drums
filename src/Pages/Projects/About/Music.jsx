@@ -2,8 +2,6 @@
 import * as React from 'react';
 import {Box, Paper, Typography,Grid} from "@material-ui/core";
 import useStyles from './styles'
-import Album from './Album'
-import Player from './Player/Player'
 
 const albums = [
     { artist : 'Mlada', title : "O Vesna Vesna ",
@@ -42,24 +40,6 @@ const Music = () => {
                         <Paper className={classes.paper}>
                             <Typography variant="h4" className={classes.title}>
                                 Альбомы
-                            </Typography>
-                            <Grid container spacing={4}>
-                                {albums.map((album, i)=> (
-                                    <Grid item xs={12} sm={6} md={4} key={i}>
-                                        <Album album={album}/>
-                                    </Grid>
-                                    ))}
-                            </Grid>
-                        </Paper>
-                        <Paper className={classes.paper}>
-                            <Typography variant="h4" className={classes.title}>
-                                <Paper className={classes.paper}>
-                                    <Typography variant="h4" className={classes.title}>
-                                        Audio
-                                    </Typography>
-                                    <Grid container spacing={4}>
-                                    </Grid>
-                                </Paper>
                             </Typography>
                         </Paper>
                     </Grid>
