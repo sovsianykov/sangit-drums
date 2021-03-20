@@ -4,7 +4,7 @@ export default makeStyles((theme) => ({
     root: {
         width: '100%',
         background: "#FAFAFA",
-        height: "1500px",
+        minHeight: "1000px",
         paddingTop: 10 ,
 
 

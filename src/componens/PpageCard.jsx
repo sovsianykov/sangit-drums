@@ -12,7 +12,7 @@ import Src from  "../assets/img/442.jpg"
 const useStyles = makeStyles({
     root: {
         width: 345,
-        background:  '#eaba7f',
+        // background:  '#eaba7f',
     },
     media: {
         height: 140,
@@ -24,7 +24,7 @@ export default function MediaCard({pages}) {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root}>
+        <Card className={classes.root} style={{background: pages.back  }}>
             <CardActionArea>
                 <CardMedia
                     className={classes.media}
