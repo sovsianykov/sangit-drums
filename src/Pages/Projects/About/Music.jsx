@@ -23,7 +23,7 @@ const albums = [
         src: 'https://music.apple.com/ru/album/dedication/1482920104'
     },
     { artist : 'Oleg Pashkovsky Ouartet ', title : "+1 ",
-        image : 'https://is2-ssl.mzstatic.com/image/thumb/Music69/v4/a6/e4/7e/a6e47e17-7465-0e1e-c0c4-8065e6f3a325/190394304218.jpg/1000x1000bb.webp',
+        image : 'https://is4-ssl.mzstatic.com/image/thumb/Music19/v4/7e/1a/47/7e1a4768-032c-1903-edac-448f1b031e0e/191061009795.jpg/1000x1000bb.webp',
         src: 'https://music.apple.com/ru/album/o-vesna-vesna/1090377015'
     },
     { artist : 'Serhiy Ovsyanikov Group', title : "Wind of Nagual",
