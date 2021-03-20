@@ -3,7 +3,7 @@ import * as React from 'react';
 import {Box, Paper, Typography,Grid} from "@material-ui/core";
 import useStyles from './styles'
 import Album from './Album'
-import Player from './Player/Player'
+// import Player from './Player/Player'
 
 const albums = [
     { artist : 'Mlada', title : "O Vesna Vesna ",
@@ -58,7 +58,7 @@ const Music = () => {
                                         Audio
                                     </Typography>
                                     <Grid container spacing={4}>
-                                     <Player/>
+                                     {/*<Player/>*/}
                                     </Grid>
                                 </Paper>
                             </Typography>
