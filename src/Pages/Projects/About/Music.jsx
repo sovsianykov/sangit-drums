@@ -58,7 +58,6 @@ const Music = () => {
                                         Audio
                                     </Typography>
                                     <Grid container spacing={4}>
-                                     <Player/>
                                     </Grid>
                                 </Paper>
                             </Typography>
