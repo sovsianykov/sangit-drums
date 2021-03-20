@@ -1,8 +1,7 @@
 
 import * as React from 'react';
 import {makeStyles} from "@material-ui/core/styles";
-import {Box,Typography, Link} from "@material-ui/core";
-import {amber} from "@material-ui/core/colors";
+import {Box,Typography} from "@material-ui/core";
 
 const useStyles = makeStyles({
     albumroot: {
@@ -23,7 +22,7 @@ const useStyles = makeStyles({
     },
     title: {
 
-        color : "darkred"
+        color : '#243941'
     },
     image : {
         display : 'block',
