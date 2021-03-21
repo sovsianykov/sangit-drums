@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 
 import {useEffect} from "react";
 
-const audio = new Audio(song)
+export const audio1 = new Audio(song)
 export default function Projects() {
     useEffect(() =>{
-        audio.play()
-        audio.volume = 0.1;
+        audio1.play()
+        audio1.volume = 0.1;
     },[])
     const pages  = [
         {title : "О проекте" , src : '/whois/' , back : '#eaba7f' },

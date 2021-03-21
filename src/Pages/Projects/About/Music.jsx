@@ -1,10 +1,10 @@
 
 import * as React from 'react';
 import {Box, Paper, Typography,Grid} from "@material-ui/core";
-import useStyles from './styles'
-import Album from './Album'
-import {albums} from '../../../assets/albums'
-// import Player from './Player/Player'
+import useStyles from './styles';
+import Album from './Album';
+import {albums, tracks} from '../../../assets/albums';
+import Player from './Player/Player';
 
 
 
@@ -34,7 +34,11 @@ const Music = () => {
                                         Audio
                                     </Typography>
                                     <Grid container spacing={4}>
-                                     {/*<Player/>*/}
+                                        {tracks.map((track) => (
+                                            <Grid item xs={12} sm={6} key={track.id}>
+                                                <Player track = {track}/>
+                                            </Grid>
+                                        ))}
                                     </Grid>
                                 </Paper>
                             </Typography>

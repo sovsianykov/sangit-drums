@@ -37,7 +37,7 @@ export const tracks = [
     { id: 1 , src : track1, title : 'Страна чудес ', description : 'трек из электронного альбома' },
     { id: 2 , src : track2, title : 'Мечты козерога  ', description : ' из альбома «Ой весна, весна» Марина Юрасова Млада' },
     { id: 3 , src : track3, title : 'Тече вода ', description : 'аранжировка украинской народной песни, М. Юрасова ' },
-    { id: 4 , src : track4, title : 'Экстатична радість ', description : 'авторский джаз' },
+    { id: 4 , src : track4, title : 'Eкстатична радість ', description : 'авторский джаз' },
     { id: 5 , src : track5, title : 'Весна ', description : ' интерпретация песни О. Скрипки, М. Юрасова' },
     { id: 6 , src : track6, title : 'Межи горами розшумілась річка  ', description : 'аранжировка укр.народной песни, М.Юрасова' },
     { id: 7 , src : track7, title : 'The Future  ', description : ' мелодия для трэка А. Гернаденко(), М. Юрасова' },
