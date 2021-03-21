@@ -1,6 +1,7 @@
 
 import * as React from 'react';
 import {Box, Paper, Typography,Grid} from "@material-ui/core";
+import MyGallery from "./ImageGridList/ImageGallery";
 import useStyles from './styles'
 
 
@@ -16,6 +17,7 @@ const Photo = () => {
                             <Typography variant="h4" className={classes.title}>
                                 Галлерея
                             </Typography>
+                            <MyGallery/>
                         </Paper>
                     </Grid>
                 </Grid>

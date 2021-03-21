@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import {  withStyles, makeStyles } from '@material-ui/core/styles';
 import {Box, Button, Typography} from "@material-ui/core";
-import { blueGrey} from '@material-ui/core/colors';
+import {deepOrange,} from '@material-ui/core/colors';
 import {audio1} from '../../Projects'
 
 const ColorButton = withStyles(() => ({
     root: {
         color: "white",
          width: '360px',
-        backgroundColor: blueGrey[600],
+        backgroundColor: deepOrange[600],
         '&:hover': {
-            backgroundColor: blueGrey[700],
+            backgroundColor: deepOrange[700],
         },
     },
 }))(Button);
