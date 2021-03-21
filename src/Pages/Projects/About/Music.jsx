@@ -3,34 +3,10 @@ import * as React from 'react';
 import {Box, Paper, Typography,Grid} from "@material-ui/core";
 import useStyles from './styles'
 import Album from './Album'
+import {albums} from '../../../assets/albums'
 // import Player from './Player/Player'
 
-const albums = [
-    { artist : 'Mlada', title : "O Vesna Vesna ",
-        image : 'https://is2-ssl.mzstatic.com/image/thumb/Music69/v4/a6/e4/7e/a6e47e17-7465-0e1e-c0c4-8065e6f3a325/190394304218.jpg/1000x1000bb.webp',
-    src: 'https://music.apple.com/ru/album/o-vesna-vesna/1090377015'
-    },
-    { artist : 'Igor Zakus  ', title : "Zakus Was Here",
-        image : 'https://is3-ssl.mzstatic.com/image/thumb/Music123/v4/da/15/2d/da152d5e-2b41-bdc5-9e2b-73feb5f9a423/cover_10160056.jpg/1000x1000bb.webp',
-        src: 'https://music.apple.com/ru/album/zakus-was-here/1482920848'
-    },
-    { artist : 'Serhiy Ovsyanikov Trio ', title : "The Bride ",
-        image : 'https://is1-ssl.mzstatic.com/image/thumb/Music/9b/fd/0e/mzi.dkxdwvgp.tif/1000x1000bb.webp',
-        src: 'https://music.apple.com/ru/album/the-bride/208427858'
-    },
-    { artist : 'Igor Zakus ', title : "Dedication ",
-        image : 'https://is2-ssl.mzstatic.com/image/thumb/Music123/v4/27/50/6c/27506c59-9ad2-1c55-0a20-71b5bccac1e2/cover_10160065.jpg/1000x1000bb.webp',
-        src: 'https://music.apple.com/ru/album/dedication/1482920104'
-    },
-    { artist : 'Oleg Pashkovsky Ouartet ', title : "+1 ",
-        image : 'https://is4-ssl.mzstatic.com/image/thumb/Music19/v4/7e/1a/47/7e1a4768-032c-1903-edac-448f1b031e0e/191061009795.jpg/1000x1000bb.webp',
-        src: 'https://music.apple.com/ru/album/o-vesna-vesna/1090377015'
-    },
-    { artist : 'Serhiy Ovsyanikov Group', title : "Wind of Nagual",
-        image : 'https://is3-ssl.mzstatic.com/image/thumb/Music19/v4/22/39/a6/2239a68b-7924-95bd-7ce9-456bfb8656e6/649558963629.jpg/1000x1000bb.webp',
-        src: 'https://music.apple.com/us/album/wind-of-nagual/1175662410 '
-    },
-]
+
 
 const Music = () => {
     const classes = useStyles()
