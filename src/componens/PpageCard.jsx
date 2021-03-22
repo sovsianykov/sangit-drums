@@ -12,6 +12,8 @@ import Src from  "../assets/img/442.jpg"
 const useStyles = makeStyles({
     root: {
         width: 345,
+        color: 'white',
+        textShadow : '0 0 4px black'
         // background:  '#eaba7f',
     },
     media: {
@@ -41,9 +43,6 @@ export default function MediaCard({pages}) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" color="primary">
-                    Share
-                </Button>
                 <Button size="small" color="primary">
                     Read More
                 </Button>

@@ -1,30 +1,43 @@
 import 'photoswipe/dist/photoswipe.css'
 import 'photoswipe/dist/default-skin/default-skin.css'
+import img1 from '../../../../assets/forGallery/sergDrum1.jpg'
+import img1T from '../../../../assets/forGallery/sergDrumThumb1.jpg'
 
 import { Gallery, Item } from 'react-photoswipe-gallery'
 
 const MyGallery = () => (
     <Gallery>
         <Item
-            original="https://placekitten.com/1024/768?image=1"
-            thumbnail="https://placekitten.com/80/60?image=1"
-            width="1024"
-            height="768"
-        >
+        original= {img1}
+        thumbnail= {img1T}
+        width="1024"
+        height="768"
+    >
             {({ ref, open }) => (
-                <img ref={ref} onClick={open} src="https://placekitten.com/80/60?image=1" alt='im' />
+                <img ref={ref} onClick={open} src={img1T} alt='im' />
             )}
-        </Item>
-        <Item
-            original="https://placekitten.com/1024/768?image=2"
-            thumbnail="https://placekitten.com/80/60?image=2"
-            width="1024"
-            height="768"
-        >
-            {({ ref, open }) => (
-                <img ref={ref} onClick={open} src="https://placekitten.com/80/60?image=2" alt='im' />
-            )}
-        </Item>
+    </Item>
+            <Item
+                original= {img1}
+                thumbnail= {img1T}
+                width="1024"
+                height="768"
+            >
+                    {({ ref, open }) => (
+                        <img ref={ref} onClick={open} src={img1T} alt='im' />
+                    )}
+            </Item>
+            <Item
+                original= {img1}
+                thumbnail= {img1T}
+                width="1024"
+                height="768"
+            >
+                    {({ ref, open }) => (
+                        <img ref={ref} onClick={open} src={img1T} alt='im' />
+                    )}
+            </Item>
+
     </Gallery>
 )
 
