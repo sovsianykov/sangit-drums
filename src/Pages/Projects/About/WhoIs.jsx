@@ -1,8 +1,9 @@
-import * as React from "react";
-import { Box, Paper, Typography, Grid } from "@material-ui/core";
-import useStyles from "./styles";
-import ava from "../../../assets/forGallery/avatab.jpg";
-import aboutPr from "../../../assets/img/aboutPR.jpg";
+
+import * as React from 'react';
+import {Box, Paper, Typography,Grid} from "@material-ui/core";
+import useStyles from './styles'
+import ava from '../../../assets/forGallery/avatab.jpg';
+import aboutPr from '../../../assets/img/aboutPR.jpg';
 // import Footer1 from "../../Footer/Footer1";
 
 const WhoIs = () => {
@@ -80,45 +81,41 @@ const WhoIs = () => {
                 <Grid item xs={12} sm={8} md={8}>
                   {/*<Typography variant='h6' paragraph className={classes.text} align='center' color='textSecondary'>*/}
 
-                  {/*</Typography>*/}
+                                    {/*</Typography>*/}
 
-                  <p className={classes.textSec}>
-                    {" "}
-                    1. Популяризация барабанов - познакомить как можно больше
-                    людей с барабанным искусством.
-                  </p>
 
-                  <p className={classes.textSec}>
-                    {" "}
-                    2. Барабанная йога - как способ исследования своего тела и
-                    психики через игру на барабанах.
-                  </p>
 
-                  <p className={classes.textSec}>
-                    {" "}
-                    3. Профессиональное обучение на барабанах, системный подход
-                    для будущих барабанщиков.
-                  </p>
 
-                  <Typography
-                    variant="body1"
-                    paragraph
-                    className={classes.text}
-                    align="left"
-                  >
-                    «Свою методику я называю барабанной йогой, поскольку игра на
-                    барабанах это искусство быть расслабленным и уметь осознанно
-                    управлять своим телом. Это внутренняя дисциплина, которая
-                    позволяет концентрироваться, удерживать внимание в
-                    нескольких направлениях, находясь в потоке ритма»
-                  </Typography>
+
+                                    <p className={classes.textSec} >     1. Популяризация барабанов - познакомить как можно больше людей с барабанным искусством.</p>
+
+
+                                    <p className={classes.textSec} >    2.   Барабанная йога - как способ исследования своего тела и психики через игру на барабанах.</p>
+
+
+                                    <p className={classes.textSec} >     3.    Профессиональное обучение на барабанах, системный подход для будущих барабанщиков.</p>
+
+
+
+
+                                    <Typography variant='body1' paragraph className={classes.text} align='left'>
+                                    «Свою методику я называю барабанной йогой, поскольку игра на барабанах это искусство быть расслабленным и уметь осознанно управлять своим телом. Это внутренняя дисциплина, которая позволяет концентрироваться,
+
+                                        удерживать внимание в нескольких направлениях, находясь в потоке ритма»
+                                    </Typography>
+                                    <Typography variant='body1' paragraph className={classes.text} align='left'>
+
+                                    </Typography>
+                                    <Typography variant='body1' paragraph className={classes.text} align='left'>
+
+                                    </Typography>
+                                </Grid>
+                            </Grid>
+                        </Paper>
+                    </Grid>
                 </Grid>
-              </Grid>
-            </Paper>
-          </Grid>
-        </Grid>
-      </main>
-    </Box>
-  );
+            </main>
+        </Box>
+    );
 };
-export default WhoIs;
+export default WhoIs
