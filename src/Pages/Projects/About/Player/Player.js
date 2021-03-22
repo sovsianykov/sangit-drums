@@ -2,7 +2,7 @@
 import {  withStyles, makeStyles } from '@material-ui/core/styles';
 import {Box, Button, Typography} from "@material-ui/core";
 import {deepOrange,} from '@material-ui/core/colors';
-// import {audio1} from '../../Projects'
+import {audio1} from '../../Projects'
 import {tracks} from "../../../../assets/albums";
 import StopIcon from '@material-ui/icons/Stop';
 const ColorButton = withStyles(() => ({
@@ -55,6 +55,7 @@ let aud = []
  aud[6] = new Audio(tracks[6].src)
  aud[7] = new Audio(tracks[7].src)
  aud[8] = new Audio(tracks[8].src)
+ aud[9] = audio1
 
 const Player = ({track}) => {
     const classes = useStyles()
@@ -64,15 +65,14 @@ const Player = ({track}) => {
 
     const stop = () => {
 
-        aud.forEach((el,i) => {
+        aud.forEach((el) => {
             el.pause()
-            tracks[i].isPlaying = 'false'
+
         })
     }
     const buttonHandler = () => {
        stop()
       aud[track.id].play()
-          track.isPlaying ='true'
     }
     // const [playing, toggle] = useAudio(track.src);
 
