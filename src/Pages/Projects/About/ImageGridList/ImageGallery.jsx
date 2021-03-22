@@ -14,7 +14,7 @@ const MyGallery = () => (
         height="768"
     >
             {({ ref, open }) => (
-                <img ref={ref} onClick={open} src={img1T} alt='im' />
+                <img ref={ref} onClick={open} src={img1T} alt='im' style={{margin:' 0 3px  1px 3px'}} />
             )}
     </Item>
             <Item
@@ -24,7 +24,7 @@ const MyGallery = () => (
                 height="768"
             >
                     {({ ref, open }) => (
-                        <img ref={ref} onClick={open} src={img1T} alt='im' />
+                        <img ref={ref} onClick={open} src={img1T}  style={{margin:' 0 3px  1px 3px'}} alt='im' />
                     )}
             </Item>
             <Item
@@ -34,7 +34,7 @@ const MyGallery = () => (
                 height="768"
             >
                     {({ ref, open }) => (
-                        <img ref={ref} onClick={open} src={img1T} alt='im' />
+                        <img ref={ref} onClick={open} src={img1T}  style={{margin:' 0 3px 1px 3px'}} alt='im' />
                     )}
             </Item>
 
