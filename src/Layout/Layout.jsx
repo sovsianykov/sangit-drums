@@ -86,6 +86,14 @@ class Layout extends Component {
                         </ListItemIcon>
                         <ListItemText primary="Blog" />
                     </ListItem>
+                    <ListItem style={{ marginTop : 300}}
+                        button component={Link} to='/new'
+                        onClick={mobileOpen ? this.handleDrawerToggle : null}>
+                        <ListItemIcon>
+                            <DescriptionOutlined />
+                        </ListItemIcon>
+                        <ListItemText secondary="post"  />
+                    </ListItem>
                 </List>
             </div>
         );
