@@ -31,9 +31,11 @@ const useStyles = makeStyles(() => ({
         width: '345px',
         textDecoration: "none",
         color : "firebrick",
-
         backgroundColor : 'antiquewhite',
 
+    },
+    title : {
+            fontSize : 25,
     },
     media: {
         height: 240,
@@ -56,42 +58,49 @@ export const timeStampToString = (ts) => {
 export default function ArticleCard({data}) {
     const classes = useStyles();
     return (
-        <Card className={classes.root} component={Link} to ={{
-            pathname : 'article/' +data.id,
-            state : data
-        }} >
-            <CardHeader className={classes.heading}
-                avatar={
-                    <Avatar aria-label="recipe" className={classes.avatar}>
-                        S
-                    </Avatar>
-                }
-                action={
-                    <IconButton aria-label="settings">
-                        <MoreVertIcon />
-                    </IconButton>
-                }
-                title={data.title}
-                subheader={timeStampToString(data.createDate.seconds)}
-            />
-            <CardMedia
-                className={classes.media}
-                image={img1}
-                title={data.title}
-            />
-            <CardContent  >
-                {/*<Typography variant="h5" color="textSecondary" component="h5" align='center' className={classes.root}>*/}
-                {/*    {data.categoryLabel}*/}
-                {/*</Typography>*/}
-            </CardContent>
-            <CardActions disableSpacing>
-                <IconButton aria-label="add to favorites">
-                    <FavoriteIcon />
-                </IconButton>
-                <IconButton aria-label="share">
-                    <ShareIcon />
-                </IconButton>
-            </CardActions>
-        </Card>
+        <>
+            { data.isPublish ?
+                <Card className={classes.root} component={Link} to ={{
+                    pathname : 'article/' +data.id,
+                    state : data
+                }} >
+                    <CardHeader className={classes.heading}
+                                avatar={
+                                    <Avatar aria-label="recipe" className={classes.avatar}>
+                                        S
+                                    </Avatar>
+                                }
+                                action={
+                                    <IconButton aria-label="settings">
+                                        <MoreVertIcon />
+                                    </IconButton>
+                                }
+                                title={data.title}
+                                subheader={timeStampToString(data.createDate.seconds)}
+                    />
+                    <CardMedia
+                        className={classes.media}
+                        image={img1}
+                        title={data.title}
+                    />
+                    <CardContent  >
+                        {/*<Typography variant="h5" color="textSecondary" component="h5" align='center' className={classes.root}>*/}
+                        {/*    {data.categoryLabel}*/}
+                        {/*</Typography>*/}
+                    </CardContent>
+                    <CardActions disableSpacing>
+                        <IconButton aria-label="add to favorites">
+                            <FavoriteIcon />
+                        </IconButton>
+                        <IconButton aria-label="share">
+                            <ShareIcon />
+                        </IconButton>
+                    </CardActions>
+                </Card>
+
+
+            : ''}
+
+        </>
     );
 }

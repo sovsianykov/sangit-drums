@@ -8,7 +8,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { ProjectsRoute, HomeRoute } from '../Routing';
 import { Link } from "react-router-dom";
-import {HomeOutlined} from "@material-ui/icons";
+import { DescriptionOutlined, HomeOutlined} from "@material-ui/icons";
 const drawerWidth = 250;
 const theme = createMuiTheme({
     palette: {
@@ -77,6 +77,14 @@ class Layout extends Component {
                             <PersonIcon className={classes.icon} />
                         </ListItemIcon>
                         <ListItemText primary="About" />
+                    </ListItem>
+                    <ListItem
+                        button component={Link} to='/main-articles'
+                        onClick={mobileOpen ? this.handleDrawerToggle : null}>
+                        <ListItemIcon>
+                            <DescriptionOutlined className={classes.icon}/>
+                        </ListItemIcon>
+                        <ListItemText primary="Blog" />
                     </ListItem>
                 </List>
             </div>

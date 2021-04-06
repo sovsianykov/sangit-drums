@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import { Route, Switch} from "react-router-dom";
 import { withRouter } from 'react-router-dom';
 import Home from './Pages/Home/Home'
 import Projects from './Pages/Projects/Projects'
@@ -41,7 +41,7 @@ class Routing extends React.Component {
                     <Route path="/article/:id">
                         <ViewArticle/>
                     </Route>
-                    <Route path="/new-article">
+                    <Route path="/new">
                         <NewArticle/>
                     </Route>
                     <Route path="/login-page">

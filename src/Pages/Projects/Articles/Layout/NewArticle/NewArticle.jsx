@@ -1,11 +1,10 @@
 
 import * as React from 'react';
-import {Box, Paper, Typography, Grid, Button, Card, CardContent, FormControl,FormHelperText,MenuItem,Select,InputLabel } from "@material-ui/core";
+import {Box, Paper, Typography, Grid, Button, Card, CardContent, FormControl,FormHelperText,InputLabel } from "@material-ui/core";
 import useStyles from '../styles'
 import "react-quill/dist/quill.snow.css";
 import ReactQuill from "react-quill";
 import {useState} from "react";
-import firebase from "../../Config/firebase";
 import { db } from '../../Config/firebase'
 
 
@@ -96,10 +95,7 @@ const NewArticle = () => {
 
                                     </InputLabel>
                                     <select
-
-                                        // value={age}
                                         onChange={onTrue}
-
                                     >
                                         <option defaultValue={false}>False</option>
                                         <option defaultValue={true}>True</option>
@@ -107,7 +103,7 @@ const NewArticle = () => {
                                     <FormHelperText>Published status</FormHelperText>
                                 </FormControl>
                                 <Button variant='contained'
-                                        className={classes.btn} color='secondary'
+                                        className={classes.btn} color='default'
                                         onClick={e =>onHandleSubmit(e)}>
                                     Submit
                                 </Button>
