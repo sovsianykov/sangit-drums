@@ -4,14 +4,14 @@ import * as React from 'react';
 import {Box, Paper, Typography,Grid} from "@material-ui/core";
 import useStyles from '../styles'
 // import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
-import firebase from '../../Config/firebase'
+// import firebase from '../../Config/firebase'
 
-import auth from "firebase/auth";
-const uiConfig = {
-    signInFlow: "popup",
-    signInSuccessUrl: '/',
-    signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
-}
+// import auth from "firebase/auth";
+// const uiConfig = {
+//     signInFlow: "popup",
+//     signInSuccessUrl: '/',
+//     signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
+// }
 
 const LoginPage = () => {
 
