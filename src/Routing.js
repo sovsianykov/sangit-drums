@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import { withRouter } from 'react-router-dom';
 import Home from './Pages/Home/Home'
 import Projects from './Pages/Projects/Projects'
@@ -10,6 +10,10 @@ import Contacts from "./Pages/Projects/About/Contacts";
 import Photo from "./Pages/Projects/About/Photo";
 import WhoIs from './Pages/Projects/About/WhoIs'
 import Layout from './Layout/Layout';
+import Main from "./Pages/Projects/Articles/Layout/Homepage/Main/Main";
+import ViewArticle from "./Pages/Projects/Articles/Layout/ViewArticle/ViewArtice";
+import NewArticle from "./Pages/Projects/Articles/Layout/NewArticle/NewArticle";
+import LoginPage from "./Pages/Projects/Articles/Layout/LoginPage]/LoginPage";
 export const HomeRoute = "/";
 export const ProjectsRoute = "/projects/";
 export const WhoIsRoute = "/whois/";
@@ -22,14 +26,28 @@ class Routing extends React.Component {
     render() {
         return (
             <Layout>
-                <Route path={HomeRoute} exact component={Home} />
-                <Route path={ProjectsRoute} component={Projects} />
-                <Route path={WhoIsRoute} exact component={WhoIs} />
-                <Route path={PhotoRoute} exact component={Photo} />
-                <Route path={MusicRoute} exact component={Music} />
-                <Route path={VideoRoute} exact component={Video} />
-                <Route path={YogaRoute} exact component={Yoga} />
-                <Route path={ContactsRoute} exact component={Contacts} />
+                <Route path={ HomeRoute } exact component={Home} />
+                <Route path={ ProjectsRoute } component={Projects} />
+                <Route path={ WhoIsRoute } exact component={WhoIs} />
+                <Route path={ PhotoRoute } exact component={Photo} />
+                <Route path= { MusicRoute } exact component={Music} />
+                <Route path={ VideoRoute } exact component={Video} />
+                <Route path={ YogaRoute } exact component={Yoga} />
+                <Route path={ ContactsRoute } exact component={Contacts} />
+                <Switch>
+                    <Route exact path="/main-articles">
+                        <Main/>
+                    </Route>
+                    <Route path="/article/:id">
+                        <ViewArticle/>
+                    </Route>
+                    <Route path="/new-article">
+                        <NewArticle/>
+                    </Route>
+                    <Route path="/login-page">
+                        <LoginPage/>
+                    </Route>
+                </Switch>
             </Layout >
         );
     }
