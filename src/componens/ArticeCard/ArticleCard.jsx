@@ -8,7 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 // import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
+import { blue } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
@@ -20,7 +20,7 @@ const useStyles = makeStyles(() => ({
     root: {
         width: '100%',
         textDecoration: "none",
-        color : "firebrick",
+        color : "blue",
         backgroundColor : 'antiquewhite',
         display: "flex",
         flexDirection : 'column'
@@ -30,7 +30,7 @@ const useStyles = makeStyles(() => ({
     heading: {
         width: '345px',
         textDecoration: "none",
-        color : "firebrick",
+        color : "black",
         backgroundColor : 'antiquewhite',
 
     },
@@ -39,16 +39,16 @@ const useStyles = makeStyles(() => ({
     },
     media: {
         height: 240,
-        backgroundColor : "firebrick",
+        backgroundColor : "orange",
     },
     content: {
         width: '100%',
 
-        backgroundColor : "firebrick",
+        backgroundColor : "blue",
     },
 
     avatar: {
-        backgroundColor: red[500],
+        backgroundColor: blue[500],
     },
 }));
 export const timeStampToString = (ts) => {

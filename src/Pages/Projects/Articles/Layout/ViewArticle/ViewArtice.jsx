@@ -4,7 +4,7 @@ import {Box, Paper, Typography, Grid} from "@material-ui/core";
 import useStyles from '../styles'
 import { withRouter } from 'react-router-dom'
 import parse from 'html-react-parser'
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 export const timeStampToString = (ts) => {
     const  date = new Date(ts *1000)

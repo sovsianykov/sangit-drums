@@ -1,5 +1,4 @@
 import React                       from "react";
-// import TextTransition, { presets } from "react-text-transition";
 import '../../index.scss'
 import {Grid} from "@material-ui/core";
 
@@ -9,7 +8,7 @@ const Home = () => {
         <Grid container   className='hero' >
         <Grid item id='home-hero' xs={12}  sm={6}   mt={3} >
             <h1 >
-              SANGIT DRUM
+              SANGIT-DRUM
             </h1>
             <h2>
                 Барабаны для всех!
@@ -24,9 +23,3 @@ const Home = () => {
 
 export default Home
 
-// default The default.
-// gentle
-// wobbly
-// stiff
-// slow
-// molasses
