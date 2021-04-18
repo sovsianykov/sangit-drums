@@ -18,9 +18,6 @@ const Photo = () => {
                                 Галлерея
                             </Typography>
                             <MyGallery/>
-                            <MyGallery/>
-                            <MyGallery/>
-                            <MyGallery/>
                         </Paper>
                     </Grid>
                 </Grid>
