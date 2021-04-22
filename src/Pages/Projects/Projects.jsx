@@ -14,11 +14,11 @@ export default function Projects() {
         audio1.volume = 0.1;
     },[])
     const pages  = [
-        {title : "О проекте" , src : '/whois/' , back : '#eaba7f' },
-        {title : "Фото" , src : '/photo/'  , back : 'green' },
-        {title : "Барабанная Йога" , src : '/yoga/'  , back : 'red' },
-        {title : "Музыка" , src : '/music/'  , back : 'blue'  },
-        {title : "Видео" , src : '/video/'  , back : '#F07427' },
+        {title : "О проекте" , src : '/whois/' , back : '#006262' },
+        {title : "Фото" , src : '/photo/'  , back : '#006262' },
+        {title : "Барабанная Йога" , src : '/yoga/'  , back : '#006262' },
+        {title : "Музыка" , src : '/music/'  , back : '#006262'  },
+        {title : "Видео" , src : '/video/'  , back : '#006262' },
         {title : "Контакты" , src : '/contacts/'  , back : '#006262'  }
     ,]
     return (
