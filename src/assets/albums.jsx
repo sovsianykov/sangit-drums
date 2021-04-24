@@ -1,7 +1,7 @@
 import track1 from './audio/for_albums/Strana_chudes.mp3'
 import track2 from './audio/for_albums/Capricorn_dreams.mp3'
-import track3 from './audio/for_albums/Teche_voda .mp3'
-import track4 from './audio/for_albums/Ecstatic_joymp3.mp3'
+import track3 from './audio/for_albums/Teche_voda.mp3'
+import track4 from './audio/for_albums/Ecstatic_joy.mp3'
 import track5 from './audio/for_albums/Vesna_O_Skrypka.mp3'
 import track6 from './audio/for_albums/Mezhy_goramy.mp3'
 import track7 from './audio/for_albums/The_Future.mp3'
@@ -35,12 +35,12 @@ export const  albums = [
 ]
 export const tracks = [
     { id: 0 , src : track1, title : 'Страна чудес ', description : 'трек из электронного альбома' },
-    { id: 1 , src : track2, title : 'Мечты козерога  ', description : ' из альбома «Ой весна, весна» Марина Юрасова Млада' },
-    { id: 2 , src : track3, title : 'Тече вода ', description : 'аранжировка украинской народной песни, М. Юрасова ' },
+    { id: 1 , src : track2, title : 'Мечты козерога  ', description : ' из альбома «Ой весна, весна»  вокал Марина Юрасова Млада' },
+    { id: 2 , src : track3, title : 'Тече вода ', description : 'аранжировка украинской народной песни,  вокал М. Юрасова ' },
     { id: 3 , src : track4, title : 'Eкстатична радість ', description : 'авторский джаз' },
-    { id: 4 , src : track5, title : 'Весна ', description : ' интерпретация песни О. Скрипки, М. Юрасова' },
-    { id: 5 , src : track6, title : 'Межи горами розшумілась річка  ', description : 'аранжировка укр.народной песни, М.Юрасова' },
-    { id: 6 , src : track7, title : 'The Future  ', description : ' мелодия для трэка А. Гернаденко(), М. Юрасова' },
-    { id: 7 , src : track8, title : 'Голубка  ', description : 'интерпретация укр. народной песни, М. Юрасова' },
+    { id: 4 , src : track5, title : 'Весна ', description : ' интерпретация песни О. Скрипки,  вокал М. Юрасова' },
+    { id: 5 , src : track6, title : 'Межи горами розшумілась річка  ', description : 'аранжировка укр.народной песни,  вокал М.Юрасова' },
+    { id: 6 , src : track7, title : 'The Future  ', description : ' мелодия для трэка А. Гернаденко (ханг),  вокал М. Юрасова' },
+    { id: 7 , src : track8, title : 'Голубка  ', description : 'интерпретация укр. народной песни,  вокал М. Юрасова' },
     { id: 8 , src : track9, title : 'Чудо Сейчас  ', description : 'трек из электронного альбома' }
 ]

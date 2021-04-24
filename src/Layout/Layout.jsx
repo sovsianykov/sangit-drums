@@ -8,7 +8,7 @@ import { withStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import { ProjectsRoute, HomeRoute } from '../Routing';
 import { Link } from "react-router-dom";
-import {DescriptionOutlined, HomeOutlined, NewReleasesOutlined} from "@material-ui/icons";
+import {DescriptionOutlined, HomeOutlined} from "@material-ui/icons";
 const drawerWidth = 250;
 const theme = createMuiTheme({
     palette: {
@@ -26,7 +26,7 @@ const styles = theme => ({
     },
     phone : {
         color: 'white',
-        textDecoration : 'none'
+        textDecoration : 'none',
     },
     drawer: {
         [theme.breakpoints.up('md')]: {
@@ -95,7 +95,7 @@ class Layout extends Component {
                         button component={Link} to='/new'
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
-                            <NewReleasesOutlined className={classes.icon}  />
+                            {/*<NewReleasesOutlined className={classes.icon}  />*/}
                         </ListItemIcon>
                         <ListItemText secondary="post"   />
                     </ListItem>
@@ -120,7 +120,7 @@ class Layout extends Component {
                                             <MenuIcon />
                                         </IconButton>
                                         <Typography variant="h6" color="inherit" className={classes.title}>
-                                            <a href="tel:+380669658925" className={classes.phone} >+38-066-9658925</a>
+                                            <a href="tel:+380669658925" className={classes.phone} > +38-066-9658925</a>
                                         </Typography>
                                     </Toolbar>
                                 </AppBar>

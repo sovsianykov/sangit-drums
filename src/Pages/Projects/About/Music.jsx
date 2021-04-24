@@ -17,7 +17,7 @@ const Music = () => {
                     <Grid item xs={12} sm={11} md={11}>
                         <Paper className={classes.paper}>
                             <Typography variant="h4" className={classes.title}>
-                                Альбомы
+                                Участие в альбомах
                             </Typography>
                             <Grid container spacing={4}>
                                 {albums.map((album, i)=> (
@@ -31,7 +31,7 @@ const Music = () => {
                             <Typography variant="h4" className={classes.title}>
                                 <Paper className={classes.paper}>
                                     <Typography variant="h4" className={classes.title}>
-                                        Audio
+                                        Авторская музыка
                                     </Typography>
                                     <Grid container spacing={4}>
                                         {tracks.map((track) => (
@@ -45,7 +45,6 @@ const Music = () => {
                         </Paper>
                     </Grid>
                 </Grid>
-
             </main>
         </Box>
     );
