@@ -24,6 +24,10 @@ const styles = theme => ({
     root: {
         display: 'flex',
     },
+    phone : {
+        color: 'white',
+        textDecoration : 'none'
+    },
     drawer: {
         [theme.breakpoints.up('md')]: {
             width: drawerWidth,
@@ -55,6 +59,7 @@ class Layout extends Component {
     menuButton = {
         display: "block"
     };
+
     render() {
         const { classes } = this.props;
         const { mobileOpen } = this.state;
@@ -115,7 +120,7 @@ class Layout extends Component {
                                             <MenuIcon />
                                         </IconButton>
                                         <Typography variant="h6" color="inherit" className={classes.title}>
-                                            Drum School
+                                            <a href="tel:+380669658925" className={classes.phone} >+38-066-9658925</a>
                                         </Typography>
                                     </Toolbar>
                                 </AppBar>

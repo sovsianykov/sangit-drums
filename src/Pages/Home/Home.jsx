@@ -7,15 +7,16 @@ const Home = () => {
     return (
         <Grid container   className='hero' >
         <Grid item id='home-hero' xs={12}  sm={6}   mt={3} >
+             <h4>DRUM SCHOOL</h4>
             <h1 >
               SANGIT-DRUM
             </h1>
             <h2>
-                Барабаны для всех!
+                Барабанная йога
             </h2>
-            <h2 id='anime'>
+            <h3 id='anime'>
                 Oсознанная игра
-            </h2>
+            </h3>
         </Grid>
         </Grid>
     );

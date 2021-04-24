@@ -33,13 +33,28 @@ a {
       font-weight: 400;
       letter-spacing: .1em;
     }
-     h2  {
+    h2 , {
+       color: #eaba7f;
+       text-align: left;
+       font-size: 30px;
+       font-weight: 400;
+       letter-spacing: .25em;
+       margin-top: 0;
+     }
+    h4 , {
+      color: white;
+      text-align: left;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: .20em;
+      margin-top: 0;
+    }
+        h3  {
       color: #eaba7f;
        text-align: left;
-      font-size: 25px;
-      font-weight: 400;
-      letter-spacing: .25em;
-       //text-shadow: 0  0 3px #282c34;
+      font-size: 20px;
+      font-weight: 300;
+      letter-spacing: .26em;
        margin-top: 0;
         &#anime {
           animation: animate1 20s forwards 3s ease-in-out infinite ;
