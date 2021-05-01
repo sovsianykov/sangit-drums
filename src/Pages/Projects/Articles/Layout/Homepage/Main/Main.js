@@ -17,11 +17,12 @@ const Main = () => {
                 if (!docs.empty) {
                     let allArticles = [];
                     docs.forEach((doc) => {
+                        if (doc.data().isPublish) {
                         const article = {
                             id: doc.id,
                             ...doc.data(),
                         };
-                        allArticles.push(article);
+                        allArticles.push(article);}
                     });
                     setArticles(allArticles);
                     setIsLoaded(true);

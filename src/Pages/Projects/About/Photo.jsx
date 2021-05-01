@@ -3,10 +3,16 @@ import * as React from 'react';
 import {Box, Paper, Typography,Grid} from "@material-ui/core";
 import MyGallery from "./ImageGridList/ImageGallery";
 import useStyles from './styles'
+import {useEffect} from "react";
+import {audio1} from "../Projects";
 
 
 
 const Photo = () => {
+    useEffect(() =>{
+        audio1.play().then(r => r)
+        audio1.volume = 0.05;
+    },[])
     const classes = useStyles()
     return (
         <Box>

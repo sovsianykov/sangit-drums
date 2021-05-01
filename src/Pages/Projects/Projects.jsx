@@ -11,7 +11,7 @@ export const audio1 = new Audio(song)
 export default function Projects() {
     useEffect(() =>{
         audio1.play()
-        audio1.volume = 0.1;
+        audio1.volume = 0.05;
     },[])
     const pages  = [
         {title : "О проекте" , src : '/whois/' , back : '#006262' },

@@ -3,13 +3,113 @@ import { Box, Paper, Typography, Grid } from "@material-ui/core";
 import useStyles from "./styles";
 import ava from "../../../assets/forGallery/avatab.jpg";
 import aboutPr from "../../../assets/img/aboutPR.jpg";
+import {albums, tracks} from "../../../assets/albums";
+import Album from "./Album";
+import Player from "./Player/Player";
+import {useEffect} from "react";
+import {audio1} from "../Projects";
 // import Footer1 from "../../Footer/Footer1";
 
 const WhoIs = () => {
   const classes = useStyles();
+  useEffect(() =>{
+    audio1.play().then(r => r)
+    audio1.volume = 0.05;
+  },[])
   return (
     <Box>
       <main className={classes.root}>
+
+        <Grid container justify="center">
+          <Grid item xs={12} sm={11} md={11}>
+            <Paper className={classes.paper} style={{ marginTop: "0" }}>
+              <Typography variant="h4" className={classes.title}>
+                Проект «Sangit-Drum» имеет несколько целей, связанных с игрой на
+                барабанах.
+              </Typography>
+              <Grid container spacing={4}>
+                <Grid item xs={12} sm={3} md={3}>
+                  <div className={classes.image}>
+                    <img className={classes.pic} src={aboutPr} alt="ava" />
+                  </div>
+                </Grid>
+                <Grid item xs={12} sm={8} md={8}>
+
+                  <p className={classes.textSec}>
+                    1. Популяризация барабанов - познакомить как можно больше
+                    людей с барабанным искусством.
+                  </p>
+                  <p className={classes.textSec}>
+
+                    2. Профессиональное обучение на барабанах, системный подход
+                    для будущих барабанщиков.
+                  </p>
+                  <p className={classes.textSec}>
+
+                    3. "Барабанная йога" - как способ исследования своего тела и
+                    психики через игру на барабанах.
+                  </p>
+                  <Typography
+                    variant="body1"
+                    paragraph
+                    className={classes.text}
+                    align="left"
+                >
+                    Проект «Sangit-Drum» будет полезным как начинающим, так и студентам средних,
+                    высших учебных заведений, а также для исполнителей на других инструментах и вокалистам.
+                  </Typography>
+                  < Typography
+                      variant="body1"
+                      paragraph
+                      className={classes.text}
+                      align="left"
+                  >
+                    Свою методику я называю Барабанной йогой, поскольку она сочетается с техниками концентрации и осознанности, поэтому люди, которые занимаются самоисследованием
+                    или хотят почувствовать лучше своё тело, могут постигать себя через мир барабанов.<br/>
+                    { "  "}  С людьми, настроенными на профессиональную подготовку, мы изучаем все премудрости барабанного
+                    искусства, - постановка рук, ног, изучение рудиментов и т.д.<br/>
+                    Для исполнителей на других инструментах, а также вокалистам я предлагаю специальные техники работы с метрономом,
+                    упражнения для развития чувства времени и ритмичной игры.<br/>
+                    Музыканты более продвинутого уровня могут использовать мой подход к
+                    освоению нечетных размеров 7/8, 5/4, 9/8, познакомиться с основами
+                    полиритмии и полиметрии, что открывает
+                    большие возможности для создания собственных идей.<br/>
+                    Основным принципом для любителей и профессионалов является умение концентрировать
+                    своё внимание, удерживая его в нескольких направлениях. Это помогает отследить напряжения в теле и расслабиться, чтобы свободно чувствовать себя за инструментом, наслаждаясь комфортным состоянием тела и ума.
+                    Поэтому через барабанную йогу, так или иначе, проходят все)
+
+                  </Typography>
+                  <Typography
+                      variant="body1"
+                      paragraph
+                      className={classes.text}
+                      align="left"
+                  >
+                    Еще я провожу специальные индивидуальные сессии для преподавателей на ударных и других инструментах, это так
+                    называемая супервизия, - консультирую в области методики преподавания и развития ритмичности.
+
+                  </Typography>
+                  <Typography
+                      variant="body1"
+                      paragraph
+                      className={classes.text}
+                      align="left"
+                  >
+
+                </Typography>
+                  <Typography
+                      variant="body1"
+                      paragraph
+                      className={classes.text}
+                      align="left"
+                  >
+
+                  </Typography>
+                </Grid>
+              </Grid>
+            </Paper>
+          </Grid>
+        </Grid>
         <Grid container justify="center">
           {/*<Grid item xs='auto' sm={1} ></Grid>*/}
           <Grid item xs={12} sm={11} md={11}>
@@ -25,10 +125,10 @@ const WhoIs = () => {
                 </Grid>
                 <Grid item xs={12} sm={8} md={8}>
                   <Typography
-                    variant="body1"
-                    paragraph
-                    className={classes.text}
-                    align="left"
+                      variant="body1"
+                      paragraph
+                      className={classes.text}
+                      align="left"
                   >
                     Сергей Табунщик - профессиональный барабанщик, композитор и преподаватель,
                     автор музыкального проекта «Miracle Now» ЕСМ джаз, автор,
@@ -45,10 +145,10 @@ const WhoIs = () => {
                     Образование:
                   </Typography>
                   <Typography
-                    variant="body1"
-                    paragraph
-                    className={classes.text}
-                    align="left"
+                      variant="body1"
+                      paragraph
+                      className={classes.text}
+                      align="left"
                   >
                     Киевский национальный университет культуры и искусств (1994) - класс ударных профессора Г. В. Черненко
                     <br /> Московское военно-музыкальное училище (1986) - класс трубы К. Я. Серостанов
@@ -223,91 +323,33 @@ const WhoIs = () => {
         </Grid>
         <Grid container justify="center">
           <Grid item xs={12} sm={11} md={11}>
-            <Paper className={classes.paper} style={{ marginTop: "0" }}>
+            <Paper className={classes.paper}>
               <Typography variant="h4" className={classes.title}>
-                Проект «Sangit-Drum» имеет несколько целей, связанных с игрой на
-                барабанах.
+                Участие в альбомах
               </Typography>
               <Grid container spacing={4}>
-                <Grid item xs={12} sm={3} md={3}>
-                  <div className={classes.image}>
-                    <img className={classes.pic} src={aboutPr} alt="ava" />
-                  </div>
-                </Grid>
-                <Grid item xs={12} sm={8} md={8}>
-
-                  <p className={classes.textSec}>
-                    1. Популяризация барабанов - познакомить как можно больше
-                    людей с барабанным искусством.
-                  </p>
-                  <p className={classes.textSec}>
-
-                    2. Профессиональное обучение на барабанах, системный подход
-                    для будущих барабанщиков.
-                  </p>
-                  <p className={classes.textSec}>
-
-                    3. "Барабанная йога" - как способ исследования своего тела и
-                    психики через игру на барабанах.
-                  </p>
-                  <Typography
-                    variant="body1"
-                    paragraph
-                    className={classes.text}
-                    align="left"
-                >
-                    Проект «Sangit-Drum» будет полезным как начинающим, так и студентам средних,
-                    высших учебных заведений, а также для исполнителей на других инструментах и вокалистам.
-                  </Typography>
-                  < Typography
-                      variant="body1"
-                      paragraph
-                      className={classes.text}
-                      align="left"
-                  >
-                    Свою методику я называю Барабанной йогой, поскольку она сочетается с техниками концентрации и осознанности, поэтому люди, которые занимаются самоисследованием
-                    или хотят почувствовать лучше своё тело, могут постигать себя через мир барабанов.<br/>
-                    { "  "}  С людьми, настроенными на профессиональную подготовку, мы изучаем все премудрости барабанного
-                    искусства, - постановка рук, ног, изучение рудиментов и т.д.<br/>
-                    Для исполнителей на других инструментах, а также вокалистам я предлагаю специальные техники работы с метрономом,
-                    упражнения для развития чувства времени и ритмичной игры.<br/>
-                    Музыканты более продвинутого уровня могут использовать мой подход к
-                    освоению нечетных размеров 7/8, 5/4, 9/8, познакомиться с основами
-                    полиритмии и полиметрии, что открывает
-                    большие возможности для создания собственных идей.<br/>
-                    Основным принципом для любителей и профессионалов является умение концентрировать
-                    своё внимание, удерживая его в нескольких направлениях. Это помогает отследить напряжения в теле и расслабиться, чтобы свободно чувствовать себя за инструментом, наслаждаясь комфортным состоянием тела и ума.
-                    Поэтому через барабанную йогу, так или иначе, проходят все)
-
-                  </Typography>
-                  <Typography
-                      variant="body1"
-                      paragraph
-                      className={classes.text}
-                      align="left"
-                  >
-                    Еще я провожу специальные индивидуальные сессии для преподавателей на ударных и других инструментах, это так
-                    называемая супервизия, - консультирую в области методики преподавания и развития ритмичности.
-
-                  </Typography>
-                  <Typography
-                      variant="body1"
-                      paragraph
-                      className={classes.text}
-                      align="left"
-                  >
-
-                </Typography>
-                  <Typography
-                      variant="body1"
-                      paragraph
-                      className={classes.text}
-                      align="left"
-                  >
-
-                  </Typography>
-                </Grid>
+                {albums.map((album, i)=> (
+                    <Grid item xs={12} sm={6} md={4} key={i}>
+                      <Album album={album}/>
+                    </Grid>
+                ))}
               </Grid>
+            </Paper>
+            <Paper className={classes.paper}>
+              <Typography variant="h4" className={classes.title}>
+                <Paper className={classes.paper}>
+                  <Typography variant="h4" className={classes.title}>
+                    Авторская музыка
+                  </Typography>
+                  <Grid container spacing={4}>
+                    {tracks.map((track) => (
+                        <Grid item xs={12} sm={6} key={track.id}>
+                          <Player track = {track}/>
+                        </Grid>
+                    ))}
+                  </Grid>
+                </Paper>
+              </Typography>
             </Paper>
           </Grid>
         </Grid>
