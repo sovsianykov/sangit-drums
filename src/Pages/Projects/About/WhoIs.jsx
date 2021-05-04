@@ -3,11 +3,13 @@ import { Box, Paper, Typography, Grid } from "@material-ui/core";
 import useStyles from "./styles";
 import ava from "../../../assets/forGallery/avatab.jpg";
 import aboutPr from "../../../assets/img/aboutPR.jpg";
-import {albums, tracks} from "../../../assets/albums";
+import { albums, tracks } from "../../../assets/albums";
+import { videos , } from "../../../assets/arrayForVideos";
 import Album from "./Album";
 import Player from "./Player/Player";
-import {useEffect} from "react";
-import {audio1} from "../Projects";
+import { useEffect } from "react";
+import { audio1 } from "../Projects";
+import VideoPlayer from "./VideoPlayer/VideoPlayer";
 // import Footer1 from "../../Footer/Footer1";
 
 const WhoIs = () => {
@@ -24,8 +26,10 @@ const WhoIs = () => {
           <Grid item xs={12} sm={11} md={11}>
             <Paper className={classes.paper} style={{ marginTop: "0" }}>
               <Typography variant="h4" className={classes.title}>
-                Проект «Sangit-Drum» имеет несколько целей, связанных с игрой на
-                барабанах.
+                О проекте «Sangit-Drum»
+              </Typography>
+              <Typography variant="subtitle1" className={classes.title}>
+                Sangit-drum - это авторский проект, частная школа украинского барабанщика Сергея Табунщика
               </Typography>
               <Grid container spacing={4}>
                 <Grid item xs={12} sm={3} md={3}>
@@ -34,20 +38,22 @@ const WhoIs = () => {
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={8} md={8}>
-
+                  <p className={classes.textSec}>
+                    Цели :
+                  </p>
                   <p className={classes.textSec}>
                     1. Популяризация барабанов - познакомить как можно больше
                     людей с барабанным искусством.
                   </p>
                   <p className={classes.textSec}>
-
                     2. Профессиональное обучение на барабанах, системный подход
                     для будущих барабанщиков.
                   </p>
                   <p className={classes.textSec}>
-
-                    3. "Барабанная йога" - как способ исследования своего тела и
-                    психики через игру на барабанах.
+                    3. Дать возможность исполнителям на других инструментах овладеть основами ритмики.
+                  </p>
+                  <p className={classes.textSec}>
+                    4. Консультации в области методики преподавания барабанов.
                   </p>
                   <Typography
                     variant="body1"
@@ -111,11 +117,10 @@ const WhoIs = () => {
           </Grid>
         </Grid>
         <Grid container justify="center">
-          {/*<Grid item xs='auto' sm={1} ></Grid>*/}
           <Grid item xs={12} sm={11} md={11}>
             <Paper className={classes.paper}>
               <Typography variant="h4" className={classes.title}>
-                Кто такой Сергей Табунщик
+                Кто такой Сергей Табунщик ?
               </Typography>
               <Grid container spacing={4}>
                 <Grid item xs={12} sm={3} md={3}>
@@ -152,13 +157,25 @@ const WhoIs = () => {
                   >
                     Киевский национальный университет культуры и искусств (1994) - класс ударных профессора Г. В. Черненко
                     <br /> Московское военно-музыкальное училище (1986) - класс трубы К. Я. Серостанов
-
                   </Typography>
+                </Grid>
+
+                  <Grid container spacing={2} justify='center'>
+                    {videos.map((video) => (
+                        <Grid item xs={12} sm={6} key={video.id}>
+                          <VideoPlayer video = {video}/>
+                        </Grid>
+                    ))}
+                  </Grid>
+
+
+              <Grid item xs={12} sm={11} md={11} >
+
                   <Typography
                       variant="h5"
                       paragraph
                       className={classes.text}
-                      align="left"
+                      align="center"
                   >
                     Записал 12 студийных альбомов с лучшими музыкантами Украины:
                   </Typography>
@@ -166,7 +183,7 @@ const WhoIs = () => {
                       variant="h6"
                       paragraph
                       className={classes.text}
-                      align="left"
+                      align="center"
                   >
 
                   </Typography>
@@ -174,7 +191,7 @@ const WhoIs = () => {
                       variant="body1"
                       paragraph
                       className={classes.text}
-                      align="left"
+                      align="center"
                       style={{marginLeft: '10%'}}
                   >
                     Дискография:
@@ -207,7 +224,7 @@ const WhoIs = () => {
                       variant="h6"
                       paragraph
                       className={classes.text}
-                      align="left"
+                      align="center"
                   >
                     Участие в музыкальных проектах
                   </Typography>
@@ -215,7 +232,7 @@ const WhoIs = () => {
                       variant="body1"
                       paragraph
                       className={classes.text}
-                      align="left"
+                      align="center"
                       style={{marginLeft: '10%'}}
 
                   >
@@ -234,7 +251,7 @@ const WhoIs = () => {
                       variant="body1"
                       paragraph
                       className={classes.text}
-                      align="left"
+                      align="center"
                       style={{marginLeft: '10%'}}
 
                   >
@@ -268,7 +285,7 @@ const WhoIs = () => {
                       variant="body1"
                       paragraph
                       className={classes.text}
-                      align="left"
+                      align="center"
                       style={{marginLeft: '10%'}}
 
                   >
@@ -285,7 +302,7 @@ const WhoIs = () => {
                       variant="h5"
                       paragraph
                       className={classes.text}
-                      align="left"
+                      align="center"
                   >
                     Участник музыкальных фестивалей:
                   </Typography>
@@ -293,7 +310,7 @@ const WhoIs = () => {
                       variant="body1"
                       paragraph
                       className={classes.text}
-                      align="left"
+                      align="center"
                       style={{marginLeft: '10%'}}
 
                   >

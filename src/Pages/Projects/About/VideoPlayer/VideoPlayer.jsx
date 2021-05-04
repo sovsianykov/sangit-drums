@@ -13,7 +13,7 @@ const VideoPlayer = ({video}) => {
                 poster="https://www.example.com/poster.png"
                 primaryColor="red"
                 allowFullScreen
-                height={300}
+                height={250}
                 width= {400}
                 // other props
             />

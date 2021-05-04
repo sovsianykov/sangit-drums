@@ -30,8 +30,8 @@ class Routing extends React.Component {
                 <Route path={ ProjectsRoute } component={Projects} />
                 <Route path={ WhoIsRoute } exact component={WhoIs} />
                 <Route path={ PhotoRoute } exact component={Photo} />
-                <Route path= { MusicRoute } exact component={Music} />
-                <Route path={ VideoRoute } exact component={Video} />
+                {/*<Route path= { MusicRoute } exact component={Music} />*/}
+                {/*<Route path={ VideoRoute } exact component={Video} />*/}
                 <Route path={ YogaRoute } exact component={Yoga} />
                 <Route path={ ContactsRoute } exact component={Contacts} />
                 <Switch>
