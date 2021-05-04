@@ -6,7 +6,7 @@ import PersonIcon from '@material-ui/icons/Person';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import {ContactsRoute, HomeRoute, PhotoRoute, WhoIsRoute , VideoRoute} from '../Routing';
+import {ContactsRoute, HomeRoute, PhotoRoute, WhoIsRoute , EducationProgramRoute} from '../Routing';
 import { Link } from "react-router-dom";
 import {
     DescriptionOutlined,
@@ -98,7 +98,7 @@ class Layout extends Component {
                 </ListItem>
                     <ListItem
                         button
-                        // component={Link} to={WhoIsRoute}
+                        component={Link} to={ EducationProgramRoute }
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
                             <Create className={classes.icon} />
@@ -107,7 +107,7 @@ class Layout extends Component {
                     </ListItem>
                     <ListItem
                         button
-                        component={Link} to={VideoRoute}
+                        // component={Link} to={VideoRoute}
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
                             < DirectionsWalk  className={classes.icon} />

@@ -41,9 +41,19 @@ export default makeStyles((theme) => ({
         padding: 10,
         overflow: "hidden"
     },
+    imageEd: {
+        width:'400px',
+        height: '300px',
+        padding: 10,
+        overflow: "hidden"
+    },
     pic : {
         display: "block",
         width:'100%',
+    },
+    picEd : {
+        display: "block",
+        height:'100%',
     },
     videos : {
         marginTop: '30px',
