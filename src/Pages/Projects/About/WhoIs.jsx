@@ -160,7 +160,7 @@ const WhoIs = () => {
                   </Typography>
                 </Grid>
 
-                  <Grid container spacing={2} justify='center'>
+                  <Grid container spacing={1} justify='center' className={classes.videos}>
                     {videos.map((video) => (
                         <Grid item xs={12} sm={6} key={video.id}>
                           <VideoPlayer video = {video}/>
@@ -356,7 +356,7 @@ const WhoIs = () => {
               <Typography variant="h4" className={classes.title}>
                 <Paper className={classes.paper}>
                   <Typography variant="h4" className={classes.title}>
-                    Авторская музыка
+                    Авторское
                   </Typography>
                   <Grid container spacing={4}>
                     {tracks.map((track) => (

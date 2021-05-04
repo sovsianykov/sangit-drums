@@ -45,6 +45,11 @@ export default makeStyles((theme) => ({
         display: "block",
         width:'100%',
     },
+    videos : {
+        marginTop: '30px',
+        marginBottom : '40px'
+
+    },
     paper: {
         marginTop: theme.spacing(3),
         marginBottom: theme.spacing(3),

@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import Home from './Pages/Home/Home'
 import Projects from './Pages/Projects/Projects'
 import Yoga from './Pages/Projects/About/Yoga'
-import Video from "./Pages/Projects/About/Video";
+import Video from "./Pages/Projects/About/AboutTheProjekt";
 import Music from "./Pages/Projects/About/Music";
 import Contacts from "./Pages/Projects/About/Contacts";
 import Photo from "./Pages/Projects/About/Photo";
