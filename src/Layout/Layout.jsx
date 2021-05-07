@@ -84,7 +84,12 @@ class Layout extends Component {
         const { mobileOpen } = this.state;
         const drawer = (
             <div id="drawer-container">
-                <div  to={HomeRoute} className="logo-drawer" />
+                 <List>
+                     <ListItem   component={Link} to={ HomeRoute }
+                           onClick={mobileOpen ? this.handleDrawerToggle : null} className="logo-drawer" >
+
+                     </ListItem>
+                 </List>
                 <List>
                     {/*<ListItem button component={Link} to={HomeRoute}*/}
                     {/*          onClick={mobileOpen ? this.handleDrawerToggle : null}>*/}
