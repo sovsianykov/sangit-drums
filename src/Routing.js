@@ -5,7 +5,7 @@ import Home from './Pages/Home/Home'
 import Projects from './Pages/Projects/Projects'
 import Yoga from './Pages/Projects/About/Yoga'
 import EducationProgram from "./Pages/Projects/About/EducationProgram";
-// import Music from "./Pages/Projects/About/Music";
+import Music from "./Pages/Projects/About/Music";
 import Contacts from "./Pages/Projects/About/Contacts";
 import Photo from "./Pages/Projects/About/Photo";
 import WhoIs from './Pages/Projects/About/WhoIs'
@@ -19,7 +19,7 @@ export const ProjectsRoute = "/projects/";
 export const WhoIsRoute = "/whois/";
 export const PhotoRoute = "/photo/";
 export const YogaRoute = "/yoga/";
-// export const MusicRoute = "/music/";
+export const MusicRoute = "/music/";
 // export const VideoRoute = "/video/";
 export const ContactsRoute = "/contacts/";
 export const EducationProgramRoute = "/eProgram/";
@@ -32,7 +32,7 @@ class Routing extends React.Component {
                 <Route path={ WhoIsRoute } exact component={WhoIs} />
                 <Route path={ PhotoRoute } exact component={Photo} />
                 <Route path={ EducationProgramRoute } exact component={EducationProgram} />
-                {/*<Route path= { MusicRoute } exact component={Music} />*/}
+                <Route path= { MusicRoute } exact component={Music} />
                 {/*<Route path={ VideoRoute } exact component={Video} />*/}
                 <Route path={ YogaRoute } exact component={Yoga} />
                 <Route path={ ContactsRoute } exact component={Contacts} />

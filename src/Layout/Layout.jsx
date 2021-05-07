@@ -107,6 +107,15 @@ class Layout extends Component {
                     </ListItem>
                     <ListItem
                         button
+                        // component={Link} to={ MusicRoute }
+                        onClick={mobileOpen ? this.handleDrawerToggle : null}>
+                        <ListItemIcon>
+                            <Create className={classes.icon} />
+                        </ListItemIcon>
+                        <ListItemText primary="Музыка" />
+                    </ListItem>
+                    <ListItem
+                        button
                         // component={Link} to={VideoRoute}
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
@@ -140,7 +149,7 @@ class Layout extends Component {
                         </ListItemIcon>
                         <ListItemText primary="Blog" />
                     </ListItem>
-                    <ListItem style={{ marginTop : 50}}
+                    <ListItem style={{ marginTop : 10}}
                         button component={Link} to='/new'
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
@@ -148,7 +157,7 @@ class Layout extends Component {
                         </ListItemIcon>
                         <ListItemText secondary="post"   />
                     </ListItem>
-                    <ListItem style={{ marginTop : 20, cursor : 'pointer'}}
+                    <ListItem style={{ marginTop : 10, cursor : 'pointer'}}
 
                               onClick={this.handleSoundOff}>
                         <ListItemIcon>

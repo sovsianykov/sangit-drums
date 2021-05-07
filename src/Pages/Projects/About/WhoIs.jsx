@@ -7,17 +7,15 @@ import { albums, tracks } from "../../../assets/albums";
 import { videos , } from "../../../assets/arrayForVideos";
 import Album from "./Album";
 import Player from "./Player/Player";
-import { useEffect } from "react";
-import { audio1 } from "../Projects";
 import VideoPlayer from "./VideoPlayer/VideoPlayer";
 // import Footer1 from "../../Footer/Footer1";
 
 const WhoIs = () => {
   const classes = useStyles();
-  useEffect(() =>{
-    audio1.play().then(r => r)
-    audio1.volume = 0.05;
-  },[])
+  // useEffect(() =>{
+  //   audio1.play().then(r => r)
+  //   audio1.volume = 0.05;
+  // },[])
   return (
     <Box>
       <main className={classes.root}>

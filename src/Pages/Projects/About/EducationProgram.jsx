@@ -2,8 +2,6 @@
 import * as React from 'react';
 import {Box, Paper, Typography,Grid} from "@material-ui/core";
 import useStyles from './styles'
-import { useEffect } from "react";
-import {audio1} from "../Projects";
 import  eduPr1  from '../../../assets/img/pr1.jpg'
 import  eduPr2  from '../../../assets/img/pr2.jpg'
 
@@ -11,10 +9,10 @@ import  eduPr2  from '../../../assets/img/pr2.jpg'
 
 
 const EducationProgram = () => {
-    useEffect(() =>{
-        audio1.play().then(r => r)
-        audio1.volume = 0.05;
-    },[])
+    // useEffect(() =>{
+    //     audio1.play().then(r => r)
+    //     audio1.volume = 0.05;
+    // },[])
     const classes = useStyles()
     return (
         <Box>

@@ -3,7 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles((theme) => ({
     root: {
         width: '100%',
-        background: "#FAFAFA",
+        // background: "#17252A ",
+        // background: "#280b36",
         minHeight: "1000px",
         paddingTop: 10 ,
 
@@ -64,6 +65,7 @@ export default makeStyles((theme) => ({
         marginTop: theme.spacing(3),
         marginBottom: theme.spacing(3),
         padding: theme.spacing(2),
+        backgroundColor : 'antiquewhite',
         [theme.breakpoints.down('xs')]: {
             width: '90%',
             marginTop: 60,
