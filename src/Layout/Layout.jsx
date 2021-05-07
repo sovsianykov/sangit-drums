@@ -6,18 +6,24 @@ import PersonIcon from '@material-ui/icons/Person';
 import MenuIcon from '@material-ui/icons/Menu';
 import { withStyles } from '@material-ui/core/styles';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import {ContactsRoute, HomeRoute, PhotoRoute, WhoIsRoute , EducationProgramRoute} from '../Routing';
+import {
+    ContactsRoute,
+    MusicRoute,
+    PhotoRoute,
+    WhoIsRoute,
+    EducationProgramRoute,
+    HomeRoute,
+    AboutMeRoute
+} from '../Routing';
 import { Link } from "react-router-dom";
 import {
     DescriptionOutlined,
-    HomeOutlined,
     Create,
     DirectionsWalk,
     PhotoAlbum,
-    ContactMail,
-    VolumeOff
+    ContactMail, AudiotrackOutlined,
 } from "@material-ui/icons";
-import { audio1 } from "../Pages/Projects/Projects";
+// import { audio1 } from "../Pages/Projects/Projects";
 const drawerWidth = 250;
 const theme = createMuiTheme({
     palette: {
@@ -69,33 +75,41 @@ class Layout extends Component {
         display: "block"
     };
 
-    handleSoundOff=()=>{
-        audio1.pause()
-        console.log('pause')
-    }
+    // handleSoundOff=()=>{
+    //     audio1.pause()
+    //     console.log('pause')
+    // }
     render() {
         const { classes } = this.props;
         const { mobileOpen } = this.state;
         const drawer = (
             <div id="drawer-container">
-                <div className="logo-drawer" />
+                <div  to={HomeRoute} className="logo-drawer" />
                 <List>
-                    <ListItem button component={Link} to={HomeRoute}
-                              onClick={mobileOpen ? this.handleDrawerToggle : null}>
-                        <ListItemIcon>
-                            <HomeOutlined className={classes.icon} />
-                        </ListItemIcon>
-                        <ListItemText primary="Главная" />
-                    </ListItem>
+                    {/*<ListItem button component={Link} to={HomeRoute}*/}
+                    {/*          onClick={mobileOpen ? this.handleDrawerToggle : null}>*/}
+                    {/*    <ListItemIcon>*/}
+                    {/*        <HomeOutlined className={classes.icon} />*/}
+                    {/*    </ListItemIcon>*/}
+                    {/*    <ListItemText primary="Главная" />*/}
+                    {/*</ListItem>*/}
                     <Divider />
                     <ListItem
-                    button component={Link} to={WhoIsRoute}
+                    button component={Link} to={ WhoIsRoute }
                     onClick={mobileOpen ? this.handleDrawerToggle : null}>
                     <ListItemIcon>
-                        <PersonIcon className={classes.icon} />
+                        <MenuIcon className={classes.icon} />
                     </ListItemIcon>
                     <ListItemText primary="О проекте" />
                 </ListItem>
+                    <ListItem
+                        button component={Link} to={ AboutMeRoute }
+                        onClick={mobileOpen ? this.handleDrawerToggle : null}>
+                        <ListItemIcon>
+                            <PersonIcon className={classes.icon} />
+                        </ListItemIcon>
+                        <ListItemText primary="Обо мне" />
+                    </ListItem>
                     <ListItem
                         button
                         component={Link} to={ EducationProgramRoute }
@@ -103,16 +117,7 @@ class Layout extends Component {
                         <ListItemIcon>
                             <Create className={classes.icon} />
                         </ListItemIcon>
-                        <ListItemText primary="Программы обучения" />
-                    </ListItem>
-                    <ListItem
-                        button
-                        // component={Link} to={ MusicRoute }
-                        onClick={mobileOpen ? this.handleDrawerToggle : null}>
-                        <ListItemIcon>
-                            <Create className={classes.icon} />
-                        </ListItemIcon>
-                        <ListItemText primary="Музыка" />
+                        <ListItemText primary="Программы" />
                     </ListItem>
                     <ListItem
                         button
@@ -121,16 +126,33 @@ class Layout extends Component {
                         <ListItemIcon>
                             < DirectionsWalk  className={classes.icon} />
                         </ListItemIcon>
-                        <ListItemText primary=" Пошаговые видеоуроки" />
+                        <ListItemText primary=" Видеоуроки" />
                     </ListItem>
                     <ListItem
                         button
-                        component={Link} to={PhotoRoute}
+                        component={Link} to={ MusicRoute }
+                        onClick={mobileOpen ? this.handleDrawerToggle : null}>
+                        <ListItemIcon>
+                            <AudiotrackOutlined className={classes.icon} />
+                        </ListItemIcon>
+                        <ListItemText primary="Музыка" />
+                    </ListItem>
+                    <ListItem
+                        button
+                        component={Link} to={ PhotoRoute }
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
                             < PhotoAlbum  className={classes.icon} />
                         </ListItemIcon>
                         <ListItemText primary="Фото" />
+                    </ListItem>
+                    <ListItem
+                        button component={Link} to='/main-articles'
+                        onClick={mobileOpen ? this.handleDrawerToggle : null}>
+                        <ListItemIcon>
+                            <DescriptionOutlined className={classes.icon}/>
+                        </ListItemIcon>
+                        <ListItemText primary="Статьи" />
                     </ListItem>
                     <ListItem
                         button
@@ -141,14 +163,6 @@ class Layout extends Component {
                         </ListItemIcon>
                         <ListItemText primary="Контакты" />
                     </ListItem>
-                    <ListItem
-                        button component={Link} to='/main-articles'
-                        onClick={mobileOpen ? this.handleDrawerToggle : null}>
-                        <ListItemIcon>
-                            <DescriptionOutlined className={classes.icon}/>
-                        </ListItemIcon>
-                        <ListItemText primary="Blog" />
-                    </ListItem>
                     <ListItem style={{ marginTop : 10}}
                         button component={Link} to='/new'
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
@@ -157,14 +171,14 @@ class Layout extends Component {
                         </ListItemIcon>
                         <ListItemText secondary="post"   />
                     </ListItem>
-                    <ListItem style={{ marginTop : 10, cursor : 'pointer'}}
+                    {/*<ListItem style={{ marginTop : 10, cursor : 'pointer'}}*/}
 
-                              onClick={this.handleSoundOff}>
-                        <ListItemIcon>
-                            < VolumeOff className={classes.icon}  />
-                        </ListItemIcon>
-                        <ListItemText  primary="sound-off"   />
-                    </ListItem>
+                    {/*          onClick={this.handleSoundOff}>*/}
+                    {/*    <ListItemIcon>*/}
+                    {/*        < VolumeOff className={classes.icon}  />*/}
+                    {/*    </ListItemIcon>*/}
+                    {/*    <ListItemText  primary="sound-off"   />*/}
+                    {/*</ListItem>*/}
                 </List>
             </div>
         );

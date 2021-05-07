@@ -8,7 +8,8 @@ import EducationProgram from "./Pages/Projects/About/EducationProgram";
 import Music from "./Pages/Projects/About/Music";
 import Contacts from "./Pages/Projects/About/Contacts";
 import Photo from "./Pages/Projects/About/Photo";
-import WhoIs from './Pages/Projects/About/WhoIs'
+import WhoIs from './Pages/Projects/About/WhoIs';
+import AboutMe from "./Pages/Projects/About/AboutMe";
 import Layout from './Layout/Layout';
 import Main from "./Pages/Projects/Articles/Layout/Homepage/Main/Main";
 import ViewArticle from "./Pages/Projects/Articles/Layout/ViewArticle/ViewArtice";
@@ -20,7 +21,7 @@ export const WhoIsRoute = "/whois/";
 export const PhotoRoute = "/photo/";
 export const YogaRoute = "/yoga/";
 export const MusicRoute = "/music/";
-// export const VideoRoute = "/video/";
+export const AboutMeRoute = "/about/";
 export const ContactsRoute = "/contacts/";
 export const EducationProgramRoute = "/eProgram/";
 class Routing extends React.Component {
@@ -33,7 +34,7 @@ class Routing extends React.Component {
                 <Route path={ PhotoRoute } exact component={Photo} />
                 <Route path={ EducationProgramRoute } exact component={EducationProgram} />
                 <Route path= { MusicRoute } exact component={Music} />
-                {/*<Route path={ VideoRoute } exact component={Video} />*/}
+                <Route path={AboutMeRoute } exact component={AboutMe} />
                 <Route path={ YogaRoute } exact component={Yoga} />
                 <Route path={ ContactsRoute } exact component={Contacts} />
                 <Switch>
