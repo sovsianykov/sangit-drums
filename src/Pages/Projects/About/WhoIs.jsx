@@ -1,21 +1,11 @@
 import * as React from "react";
 import { Box, Paper, Typography, Grid } from "@material-ui/core";
 import useStyles from "./styles";
-// import ava from "../../../assets/forGallery/avatab.jpg";
 import aboutPr from "../../../assets/img/aboutPR.jpg";
-// import { albums, tracks } from "../../../assets/albums";
-// import { videos , } from "../../../assets/arrayForVideos";
-// import Album from "./Album";
-// import Player from "./Player/Player";
-// import VideoPlayer from "./VideoPlayer/VideoPlayer";
-// import Footer1 from "../../Footer/Footer1";
 
 const WhoIs = () => {
   const classes = useStyles();
-  // useEffect(() =>{
-  //   audio1.play().then(r => r)
-  //   audio1.volume = 0.05;
-  // },[])
+
   return (
     <Box>
       <main className={classes.root}>

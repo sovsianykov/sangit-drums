@@ -21,7 +21,7 @@ import {
     Create,
     DirectionsWalk,
     PhotoAlbum,
-    ContactMail, AudiotrackOutlined,
+    ContactMail, AudiotrackOutlined, PhoneIphone,
 } from "@material-ui/icons";
 // import { audio1 } from "../Pages/Projects/Projects";
 const drawerWidth = 250;
@@ -42,7 +42,16 @@ const styles = theme => ({
     phone : {
         color: 'white',
         textDecoration : 'none',
+
     },
+    // phoneIcon : {
+    //     color: 'white',
+    //     textDecoration : 'none',
+    //     position : 'absolute',
+    //     left : 100,
+    //     top :10
+    //
+    // },
     drawer: {
         [theme.breakpoints.up('md')]: {
             width: drawerWidth,
@@ -75,10 +84,7 @@ class Layout extends Component {
         display: "block"
     };
 
-    // handleSoundOff=()=>{
-    //     audio1.pause()
-    //     console.log('pause')
-    // }
+
     render() {
         const { classes } = this.props;
         const { mobileOpen } = this.state;
@@ -91,13 +97,6 @@ class Layout extends Component {
                      </ListItem>
                  </List>
                 <List>
-                    {/*<ListItem button component={Link} to={HomeRoute}*/}
-                    {/*          onClick={mobileOpen ? this.handleDrawerToggle : null}>*/}
-                    {/*    <ListItemIcon>*/}
-                    {/*        <HomeOutlined className={classes.icon} />*/}
-                    {/*    </ListItemIcon>*/}
-                    {/*    <ListItemText primary="Главная" />*/}
-                    {/*</ListItem>*/}
                     <Divider />
                     <ListItem
                     button component={Link} to={ WhoIsRoute }
@@ -204,8 +203,9 @@ class Layout extends Component {
                                         >
                                             <MenuIcon />
                                         </IconButton>
-                                        <Typography variant="h6" color="inherit" className={classes.title}>
-                                            <a href="tel:+380669658925" className={classes.phone} > +38-066-9658925</a>
+                                        <Typography variant="h6" color="inherit" className={classes.phone} justify='center' >
+                                            <PhoneIphone  />
+                                            <a href="tel:+380669658925" className={classes.phone} >+38-066-9658925</a>
                                         </Typography>
                                     </Toolbar>
                                 </AppBar>
