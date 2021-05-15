@@ -33,10 +33,8 @@ export default makeStyles((theme) => ({
         marginBottom: 15,
         lineHeight: '25px',
         fontSize : '18px'
-
-
-
     },
+
     image: {
         width:'100%',
         padding: 10,
