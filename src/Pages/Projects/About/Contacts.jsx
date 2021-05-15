@@ -45,7 +45,7 @@ const Contacts = () => {
                     <Grid item xs={12} sm={11} md={11}>
                         <Paper className={classes.paper}>
                             <Typography variant="h4" className={classes.title}>
-                               Контакты
+                               Записаться на курс
                             </Typography>
                            <div className='form'>
                                <form onSubmit={onSubmit}>
