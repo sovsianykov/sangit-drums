@@ -34,11 +34,21 @@ export default makeStyles((theme) => ({
         lineHeight: '25px',
         fontSize : '18px'
     },
+    btn :{
+      backgroundColor: 'firebrick' ,
+      color: 'antiquewhite',
+        position: "relative",
+        left:'40%'
+    },
+
+
+
 
     image: {
         width:'100%',
         padding: 10,
-        overflow: "hidden"
+        overflow: "hidden",
+
     },
     imageEd: {
         width:'400px',
