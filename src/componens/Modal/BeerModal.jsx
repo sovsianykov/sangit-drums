@@ -22,7 +22,7 @@ const Modal = ({active, setActive,}) => {
         from_name: '',
         to_name: '',
         message: '',
-        reply_to: '',
+        email: '',
     });
     const onSubmit = (e) => {
         e.preventDefault();
@@ -51,7 +51,7 @@ const Modal = ({active, setActive,}) => {
                         <Grid item xs={12} sm={11} md={11}>
                             <Paper className={classes.paper}>
                                 <Typography variant="h4" className={classes.title}>
-                                    Записаться на курс
+                                    Ваше сообщение
                                 </Typography>
                                 <div className='form'>
                                     <form onSubmit={onSubmit}>
@@ -80,10 +80,10 @@ const Modal = ({active, setActive,}) => {
                                             type='text'
                                             name='reply_to'
                                             placeholder='ваш email'
-                                            value={toSend.reply_to}
+                                            value={toSend.email}
                                             onChange={handleChange}
                                         />
-                                        <Button type='submit'>Отправить</Button>
+                                        <Button type='submit' onClick={()=>handleClick()}>Отправить</Button>
                                     </form>
                                 </div>
                             </Paper>

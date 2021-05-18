@@ -35,7 +35,7 @@ const EducationProgram = () => {
               <Typography variant="h4" className={classes.title}>
                 Индивидуальные занятия на барабанах
               </Typography>
-              <Grid container spacing={4} >
+              <Grid container spacing={4} className={classes.edBlock} >
                 <Grid item xs={12} sm={3} md={3} >
                   <div className={classes.image}>
                     <img className={classes.pic} src={eduPr1} alt="ava2" />
@@ -80,16 +80,25 @@ const EducationProgram = () => {
                     Пробный урок, Киев - 250 грн, 30 мин
                     <br />
                     Пробный урок по скайпу - бесплатно, 30 мин
-                    <br />
-                    Абонемент на 8 занятий в месяц 3600 грн - скидка 10%
-                    (стоимость урока - 450 грн)
-                    <br />
-                    Абонемент на 12 занятий в месяц 4800 грн - скидка 20%
-                    (стоимость урока - 400 грн)
                   </Typography>
+                   <Typography variant='h6' className={classes.text} color='textPrimary'>
+                     <br />
+                     Абонемент на 8 занятий в месяц 3600 грн - скидка 10%
+                     (стоимость урока - 450 грн)
+                     Абонемент на 12 занятий в месяц 4800 грн - скидка 20%
+                     (стоимость урока - 400 грн)
+                   </Typography>
+                  <Button
+                      variant="contained"
+                      className={classes.btn}
+                      color="secondary"
+                      onClick={() => setModalActive(true)}
+                  >
+                    Записаться
+                  </Button>
                 </Grid>
               </Grid>
-              <Grid container spacing={4}  >
+              <Grid container spacing={4} className={classes.edBlock} >
                 <Grid item xs={12} sm={3} md={3}>
                   <div className={classes.image}>
                     <img className={classes.pic} src={eduPr4} alt="ava2" />
@@ -112,14 +121,13 @@ const EducationProgram = () => {
                   >
                     Индивидуальные консультации по вопросам обучения детей и
                     взрослых на барабанах.
-                    <br />
-                    Стоимость 500 грн - 60 мин
                   </Typography>
+                  <div className={classes.price}> Стоимость 500 грн - 60 мин</div>
                   <Button
-                    variant="contained"
-
-                    className={classes.btn}
-                    color="secondary"
+                      variant="contained"
+                      className={classes.btn}
+                      color="secondary"
+                      onClick={() => setModalActive(true)}
                   >
                     Записаться на курс
                   </Button>
@@ -168,11 +176,11 @@ const EducationProgram = () => {
                     color="secondary"
                     onClick={() => setModalActive(true)}
                   >
-                    Записаться
+                    Записаться на курс
                   </Button>
                 </Grid>
               </Grid>
-              <Grid container spacing={4}>
+              <Grid container spacing={4} className={classes.edBlock}>
                 <Grid item xs={12} sm={3} md={3}>
                   <div className={classes.image}>
                     <img className={classes.pic} src={eduPr6} alt="ava2" />
@@ -180,12 +188,14 @@ const EducationProgram = () => {
                 </Grid>
                 <Grid item xs={12} sm={8} md={8}>
                   <Typography
-                    variant="h5"
-                    paragraph
-                    className={classes.title}
-                    align="center"
+                      variant="h5"
+                      paragraph
+                      className={classes.title}
+                      style={{ fontWeight : '600'}}
+                      align="center"
                   >
                     Онлайн-курс «Как преподавать барабаны системно?»
+
                   </Typography>
                   <Typography
                     variant="h5"
@@ -195,19 +205,22 @@ const EducationProgram = () => {
                   >
                     Техника рук, независимость, рудиментарные основы, чувство
                     времени, работа с метрономом, структура изучения ритмов на
-                    ударной установке + нотный материал. Стоимость 1500 грн
-                    8-дневный курс (4 занятия)
+                    ударной установке + нотный материал.
                   </Typography>
+                  <div className={classes.price}>  Стоимость 1500 грн
+                    8-дневный курс (4 занятия)</div>
+
                   <Button
-                    variant="contained"
-                    className={classes.btn}
-                    color="secondary"
+                      variant="contained"
+                      className={classes.btn}
+                      color="secondary"
+                      onClick={() => setModalActive(true)}
                   >
                     Записаться на курс
                   </Button>
                 </Grid>
               </Grid>
-              <Grid container spacing={4}>
+              <Grid container spacing={4} className={classes.edBlock}>
                 <Grid item xs={12} sm={3} md={3}>
                   <div className={classes.image}>
                     <img className={classes.pic} src={eduPr1} alt="ava2" />
@@ -231,16 +244,18 @@ const EducationProgram = () => {
                     Методы изучение 5/4, 7/4, 9/4… Продвинутый уровень 10
                     -дневный курс (5 практических занятий) Стоимость 1800 грн
                   </Typography>
+                  <div className={classes.price}>  Стоимость 1800 грн</div>
                   <Button
-                    variant="contained"
-                    className={classes.btn}
-                    color="secondary"
+                      variant="contained"
+                      className={classes.btn}
+                      color="secondary"
+                      onClick={() => setModalActive(true)}
                   >
                     Записаться на курс
                   </Button>
                 </Grid>
               </Grid>
-              <Grid container spacing={4}>
+              <Grid container spacing={4} className={classes.edBlock}>
                 <Grid item xs={12} sm={3} md={3}>
                   <div className={classes.image}>
                     <img className={classes.pic} src={eduPr7} alt="ava2" />
@@ -264,18 +279,21 @@ const EducationProgram = () => {
                     Размеры 6/8, 12/8, 3/4 - «пляшущие друг в друге». Единая
                     пульсация (12/8) при различной акцентировке, свободное
                     переключение Продвинутый уровень Недельный курс (4
-                    практических занятий) Стоимость 1500 грн
+                    практических занятий)
                   </Typography>
+                  <div className={classes.price}>  Стоимость 1500 грн</div>
+
                   <Button
-                    variant="contained"
-                    className={classes.btn}
-                    color="secondary"
+                      variant="contained"
+                      className={classes.btn}
+                      color="secondary"
+                      onClick={() => setModalActive(true)}
                   >
                     Записаться на курс
                   </Button>
                 </Grid>
               </Grid>
-              <Grid container spacing={4}>
+              <Grid container spacing={4} className={classes.edBlock}>
                 <Grid item xs={12} sm={3} md={3}>
                   <div className={classes.image}>
                     <img className={classes.pic} src={eduPr2} alt="ava2" />
@@ -297,13 +315,15 @@ const EducationProgram = () => {
                     align="left"
                   >
                     Продвинутый уровень 10-дневный курс (5 практических занятий)
-                    Стоимость 1800 горн
                     <br />
                   </Typography>
+                  <div className={classes.price}>  Стоимость 1800 грн</div>
+
                   <Button
-                    variant="contained"
-                    className={classes.btn}
-                    color="secondary"
+                      variant="contained"
+                      className={classes.btn}
+                      color="secondary"
+                      onClick={() => setModalActive(true)}
                   >
                     Записаться на курс
                   </Button>

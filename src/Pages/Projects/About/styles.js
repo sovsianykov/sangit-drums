@@ -23,7 +23,7 @@ export default makeStyles((theme) => ({
         paddingRight: 40,
         // marginLeft:'20px',
         marginBottom:40,
-        textIndent: 40
+        textIndent: 10
     },
     textSec : {
         textIndent: '25px',
@@ -48,7 +48,7 @@ export default makeStyles((theme) => ({
         marginTop : '20px'
     },
     price :{
-         marginBottom : '10px',
+         marginBottom : '20px',
         marginTop: '5%',
         width :'100%',
         color: '#585858',
