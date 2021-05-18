@@ -23,10 +23,8 @@ export default makeStyles((theme) => ({
         paddingRight: 40,
         // marginLeft:'20px',
         marginBottom:40,
-        textIndent: 10
     },
     textSec : {
-        textIndent: '25px',
         color: "#3c3c3c",
         paddingLeft: 40,
         paddingRight: 40,

@@ -7,7 +7,7 @@ import eduPr1 from "../../../assets/img/pr1.jpg";
 import eduPr2 from "../../../assets/img/pr2.jpg";
 import eduPr3 from "../../../assets/img/Pr3.jpg";
 import eduPr4 from "../../../assets/img/Pr4.jpg";
-// import eduPr5 from "../../../assets/img/Pr5.jpg";
+import eduPr5 from "../../../assets/img/Pr5.jpg";
 import eduPr6 from "../../../assets/img/Pr6.jpg";
 import eduPr7 from "../../../assets/img/Pr7.jpg";
 
@@ -101,7 +101,7 @@ const EducationProgram = () => {
               <Grid container spacing={4} className={classes.edBlock} >
                 <Grid item xs={12} sm={3} md={3}>
                   <div className={classes.image}>
-                    <img className={classes.pic} src={eduPr4} alt="ava2" />
+                    <img className={classes.pic} src={eduPr2} alt="ava2" />
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={8} md={8} >
@@ -223,7 +223,7 @@ const EducationProgram = () => {
               <Grid container spacing={4} className={classes.edBlock}>
                 <Grid item xs={12} sm={3} md={3}>
                   <div className={classes.image}>
-                    <img className={classes.pic} src={eduPr1} alt="ava2" />
+                    <img className={classes.pic} src={eduPr4} alt="ava2" />
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={8} md={8}>
@@ -296,7 +296,7 @@ const EducationProgram = () => {
               <Grid container spacing={4} className={classes.edBlock}>
                 <Grid item xs={12} sm={3} md={3}>
                   <div className={classes.image}>
-                    <img className={classes.pic} src={eduPr2} alt="ava2" />
+                    <img className={classes.pic} src={eduPr5} alt="ava2" />
                   </div>
                 </Grid>
                 <Grid item xs={12} sm={8} md={8}>
