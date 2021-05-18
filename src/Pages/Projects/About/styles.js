@@ -37,13 +37,26 @@ export default makeStyles((theme) => ({
     btn :{
       backgroundColor: 'firebrick' ,
       color: 'antiquewhite',
-        position: "relative",
-        left:'40%'
+        display: "block",
+        margin: ' 0 auto'
     },
-
-
-
-
+    edBlock : {
+       border: "2px solid #006262 "  ,
+        borderRadius : '5px',
+        padding : "10px",
+        background : '#FAEBD7',
+        marginTop : '20px'
+    },
+    price :{
+         marginBottom : '10px',
+        marginTop: '5%',
+        width :'100%',
+        color: '#585858',
+        display: "block",
+        textAlign: 'center',
+        fontSize : '25px',
+        fontWeight : '500'
+    },
     image: {
         width:'100%',
         padding: 10,

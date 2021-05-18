@@ -1,13 +1,14 @@
 import * as React from "react";
-import { Box, Paper, Typography, Grid, Button } from "@material-ui/core";
+import { Box, Paper, Typography, Grid, Button  } from "@material-ui/core";
 import useStyles from "./styles";
 import eduPr1 from "../../../assets/img/pr1.jpg";
 import eduPr2 from "../../../assets/img/pr2.jpg";
 import eduPr3 from "../../../assets/img/Pr3.jpg";
 import eduPr4 from "../../../assets/img/Pr4.jpg";
-import eduPr5 from "../../../assets/img/Pr5.jpg";
+// import eduPr5 from "../../../assets/img/Pr5.jpg";
 import eduPr6 from "../../../assets/img/Pr6.jpg";
 import eduPr7 from "../../../assets/img/Pr7.jpg";
+import {ContactsRoute} from "../../../Routing";
 
 const EducationProgram = () => {
   const classes = useStyles();
@@ -20,16 +21,16 @@ const EducationProgram = () => {
               <Typography variant="h4" className={classes.title}>
                 Индивидуальные занятия на барабанах
               </Typography>
-              <Grid container spacing={4}>
-                <Grid item xs={12} sm={3} md={3}>
+              <Grid container spacing={4} >
+                <Grid item xs={12} sm={3} md={3} >
                   <div className={classes.image}>
                     <img className={classes.pic} src={eduPr1} alt="ava2" />
                   </div>
-                  <div className={classes.image}>
-                    <img className={classes.pic} src={eduPr5} alt="ava2" />
-                  </div>
+                  {/*<div className={classes.image}>*/}
+                  {/*  <img className={classes.pic} src={eduPr5} alt="ava2" />*/}
+                  {/*</div>*/}
                 </Grid>
-                <Grid item xs={12} sm={8} md={8}>
+                <Grid item xs={12} sm={8} md={8} >
                   <p className={classes.textSec}>- постановка рук, ног</p>
                   <p className={classes.textSec}>
                     - базовые рудиментарные навыки
@@ -74,13 +75,13 @@ const EducationProgram = () => {
                   </Typography>
                 </Grid>
               </Grid>
-              <Grid container spacing={4}>
+              <Grid container spacing={4}  >
                 <Grid item xs={12} sm={3} md={3}>
                   <div className={classes.image}>
                     <img className={classes.pic} src={eduPr4} alt="ava2" />
                   </div>
                 </Grid>
-                <Grid item xs={12} sm={8} md={8}>
+                <Grid item xs={12} sm={8} md={8} >
                   <Typography
                     variant="h4"
                     paragraph
@@ -102,6 +103,7 @@ const EducationProgram = () => {
                   </Typography>
                   <Button
                     variant="contained"
+
                     className={classes.btn}
                     color="secondary"
                   >
@@ -109,26 +111,27 @@ const EducationProgram = () => {
                   </Button>
                 </Grid>
               </Grid>
-              <Grid container spacing={4}>
+              <Typography
+                  variant="h4"
+                  paragraph
+                  className={classes.title}
+
+                  align="center"
+              >
+                Курсы для инструменталистов, вокалистов, преподавателей
+              </Typography>
+              <Grid container spacing={4} className={classes.edBlock}>
                 <Grid item xs={12} sm={3} md={3}>
                   <div className={classes.image}>
                     <img className={classes.pic} src={eduPr3} alt="ava2" />
                   </div>
                 </Grid>
-
                 <Grid item xs={12} sm={8} md={8}>
-                  <Typography
-                    variant="h4"
-                    paragraph
-                    className={classes.title}
-                    align="left"
-                  >
-                    Курсы для инструменталистов, вокалистов, преподавателей
-                  </Typography>
                   <Typography
                     variant="h5"
                     paragraph
                     className={classes.title}
+                    style={{ fontWeight : '600'}}
                     align="center"
                   >
                     Онлайн-курс «Ритмичная игра»
@@ -142,12 +145,14 @@ const EducationProgram = () => {
                     Развитие чувства времени, работа с метрономом, понятие
                     Groove, трех-векторное внимание, (пяти-векторное для
                     барабанщиков) + Нотный материал Базовый 12-дневный курс (6
-                    практических занятий) Стоимость 2000 грн
+                    практических занятий)<br/>
                   </Typography>
+                  <div className={classes.price}> Стоимость 2000 грн</div>
                   <Button
                     variant="contained"
                     className={classes.btn}
                     color="secondary"
+                    to = {ContactsRoute}
                   >
                     Записаться на курс
                   </Button>
