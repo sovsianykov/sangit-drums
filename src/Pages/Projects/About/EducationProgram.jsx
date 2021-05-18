@@ -1,5 +1,7 @@
 import * as React from "react";
-import { Box, Paper, Typography, Grid, Button  } from "@material-ui/core";
+import {useState} from "react";
+import BeerModal from "../../../componens/Modal/BeerModal";
+import { Box, Paper, Typography, Grid, Button } from "@material-ui/core";
 import useStyles from "./styles";
 import eduPr1 from "../../../assets/img/pr1.jpg";
 import eduPr2 from "../../../assets/img/pr2.jpg";
@@ -8,12 +10,24 @@ import eduPr4 from "../../../assets/img/Pr4.jpg";
 // import eduPr5 from "../../../assets/img/Pr5.jpg";
 import eduPr6 from "../../../assets/img/Pr6.jpg";
 import eduPr7 from "../../../assets/img/Pr7.jpg";
-import {ContactsRoute} from "../../../Routing";
 
 const EducationProgram = () => {
+  const [modalActive, setModalActive] = useState(false)
   const classes = useStyles();
   return (
     <Box>
+      <BeerModal active={modalActive} setActive={setModalActive}  >
+        <h2 >
+          item.name
+        </h2>
+
+
+        <h2  >
+          brewers tips : <br/> <br/>
+          first brewed : <br/>
+        </h2>
+
+      </BeerModal>
       <main className={classes.root}>
         <Grid container justify="center">
           <Grid item xs={12} sm={11} md={11}>
@@ -152,9 +166,9 @@ const EducationProgram = () => {
                     variant="contained"
                     className={classes.btn}
                     color="secondary"
-                    to = {ContactsRoute}
+                    onClick={() => setModalActive(true)}
                   >
-                    Записаться на курс
+                    Записаться
                   </Button>
                 </Grid>
               </Grid>
