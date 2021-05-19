@@ -94,5 +94,12 @@ export default makeStyles((theme) => ({
             marginBottom: theme.spacing(6),
             padding: theme.spacing(3),
         },
+
+    },
+    social : {
+        fontSize: 40,
+        color:"black",
+        letterSpacing : '.1rem'
     }
+
 }));

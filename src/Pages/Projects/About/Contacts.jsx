@@ -6,6 +6,7 @@ import useStyles from './styles'
 import { send } from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import './form.scss'
+import {EmailOutlined, Facebook, PhoneIphone, Telegram, YouTube} from "@material-ui/icons";
 
 
 
@@ -45,7 +46,7 @@ const Contacts = () => {
                     <Grid item xs={12} sm={11} md={11}>
                         <Paper className={classes.paper}>
                             <Typography variant="h4" className={classes.title}>
-                               Записаться на курс
+                               Связаться со мной
                             </Typography>
                            <div className='form'>
                                <form onSubmit={onSubmit}>
@@ -80,6 +81,27 @@ const Contacts = () => {
                                    <Button type='submit'>Отправить</Button>
                                </form>
                            </div>
+                            <Typography variant='h5' className="social" align='center' >
+                                <a href="mailto:sangitdrum@gmail.com" className={classes.social} >
+                                    <EmailOutlined className={classes.social} /><br/> sangitdrum@gmail.com
+                                </a>
+                            </Typography>
+                            <Typography variant='h2' className="social" align='center' >
+                                <a href="https://www.facebook.com/sergey.tabunshchik"  >
+                                <Facebook className={classes.social} />
+                                </a>
+
+                                <a href="https://www.youtube.com/channel/UCMVD_FDLnYj-Fb9zSM9lA_Q"  >
+                                    <YouTube className={classes.social} />
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCMVD_FDLnYj-Fb9zSM9lA_Q"  >
+                                    <Telegram className={classes.social} />
+                                </a>
+                            </Typography>
+                            <Typography variant="body1"   align='center' color='textPrimary' >
+                                <PhoneIphone  />
+                                <a href="tel:+380669658925" className={classes.social} >+38-066-9658925</a>
+                            </Typography>
                         </Paper>
                     </Grid>
                 </Grid>
