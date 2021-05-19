@@ -100,6 +100,13 @@ export default makeStyles((theme) => ({
         fontSize: 40,
         color:"black",
         letterSpacing : '.1rem'
+    },
+    socialIc : {
+        fontSize: 60,
+        display: "inline-block",
+        width : 60,
+        margin : " 0 20px",
+        letterSpacing : '.1rem'
     }
 
 }));

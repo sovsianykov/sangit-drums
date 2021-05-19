@@ -86,20 +86,20 @@ const Contacts = () => {
                                     <EmailOutlined className={classes.social} /><br/> sangitdrum@gmail.com
                                 </a>
                             </Typography>
-                            <Typography variant='h2' className="social" align='center' >
-                                <a href="https://www.facebook.com/sergey.tabunshchik"  >
-                                <Facebook className={classes.social} />
+                            <Typography variant='h2'  align='center' >
+                                <a href="https://www.facebook.com/sangitdrum"  >
+                                <Facebook className={classes.socialIc} style={{color: 'blue'}}  />
                                 </a>
 
                                 <a href="https://www.youtube.com/channel/UCMVD_FDLnYj-Fb9zSM9lA_Q"  >
-                                    <YouTube className={classes.social} />
+                                    <YouTube className={classes.socialIc} style= {{color: 'red'}}/>
                                 </a>
                                 <a href="https://www.youtube.com/channel/UCMVD_FDLnYj-Fb9zSM9lA_Q"  >
-                                    <Telegram className={classes.social} />
+                                    <Telegram className={classes.socialIc}  style={{color: 'deepskyblue'}}/>
                                 </a>
                             </Typography>
                             <Typography variant="body1"   align='center' color='textPrimary' >
-                                <PhoneIphone  />
+                                <PhoneIphone style={{color: 'darkblue'}}  />
                                 <a href="tel:+380669658925" className={classes.social} >+38-066-9658925</a>
                             </Typography>
                         </Paper>
