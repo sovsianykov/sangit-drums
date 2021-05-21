@@ -13,7 +13,7 @@ import {
     WhoIsRoute,
     EducationProgramRoute,
     HomeRoute,
-    AboutMeRoute
+    AboutMeRoute, YogaRoute
 } from '../Routing';
 import { Link } from "react-router-dom";
 import {
@@ -151,12 +151,12 @@ class Layout extends Component {
                         <ListItemText primary="Фото" />
                     </ListItem>
                     <ListItem
-                        button component={Link} to='/main-articles'
+                        button component={Link} to={YogaRoute}
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
                             <DescriptionOutlined className={classes.icon}/>
                         </ListItemIcon>
-                        <ListItemText primary="Статьи" />
+                        <ListItemText primary="Барабанная йога" />
                     </ListItem>
                     <ListItem
                         button
