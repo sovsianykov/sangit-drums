@@ -24,11 +24,15 @@ export const MusicRoute = "/music/";
 export const AboutMeRoute = "/about/";
 export const ContactsRoute = "/contacts/";
 export const EducationProgramRoute = "/eProgram/";
+export const NewsRoute = "/news/";
+export const NewNews = "/news/";
 class Routing extends React.Component {
     render() {
         return (
             <Layout>
                 <Route path={ HomeRoute } exact component={Home} />
+                <Route path={ NewsRoute } exact component={ Main } />
+                <Route path={ NewNews } exact component={ NewArticle } />
                 <Route path={ ProjectsRoute } component={Projects} />
                 <Route path={ WhoIsRoute } exact component={WhoIs} />
                 <Route path={ PhotoRoute } exact component={Photo} />

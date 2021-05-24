@@ -97,14 +97,15 @@ export default makeStyles((theme) => ({
 
     },
     social : {
-        fontSize: 40,
+        fontSize: 20,
         color:"black",
         letterSpacing : '.1rem'
     },
     socialIc : {
-        fontSize: 60,
+        fontSize: '70px',
         display: "inline-block",
-        width : 60,
+        width : "70px",
+        lineHeight: '70px',
         margin : " 0 20px",
         letterSpacing : '.1rem'
     }

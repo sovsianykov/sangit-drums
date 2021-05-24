@@ -6,7 +6,7 @@ import useStyles from './styles'
 import { send } from 'emailjs-com';
 import{ init } from 'emailjs-com';
 import './form.scss'
-import {EmailOutlined, Facebook, PhoneIphone, Telegram, YouTube} from "@material-ui/icons";
+import { Facebook, PhoneIphone, Telegram, YouTube} from "@material-ui/icons";
 
 
 
@@ -66,24 +66,28 @@ const Contacts = () => {
                                    />
                                    <input
                                        type='text'
-                                       name='message'
-                                       placeholder='ваше сообщение'
-                                       value={toSend.message}
-                                       onChange={handleChange}
-                                   />
-                                   <input
-                                       type='text'
                                        name='reply_to'
                                        placeholder='ваш email'
                                        value={toSend.reply_to}
                                        onChange={handleChange}
                                    />
+                                   <input
+                                       type='text'
+                                       name='message'
+                                       placeholder='ваше сообщение'
+                                       value={toSend.message}
+                                       onChange={handleChange}
+                                   />
                                    <Button type='submit'>Отправить</Button>
                                </form>
                            </div>
-                            <Typography variant='h5' className="social" align='center' >
+                            <Typography variant="body1"   align='center' color='textPrimary' >
+                                <PhoneIphone style={{color: 'darkblue',marginTop:"20px"}}/>
+                                <a href="tel:+380669658925" className={classes.social} >+38-066-9658925</a>
+                            </Typography>
+                            <Typography variant='h5'  align='center' >
                                 <a href="mailto:sangitdrum@gmail.com" className={classes.social} >
-                                    <EmailOutlined className={classes.social} /><br/> sangitdrum@gmail.com
+                                    <br/> sangitdrum@gmail.com
                                 </a>
                             </Typography>
                             <Typography variant='h2'  align='center' >
@@ -97,10 +101,6 @@ const Contacts = () => {
                                 <a href="https://www.youtube.com/channel/UCMVD_FDLnYj-Fb9zSM9lA_Q"  >
                                     <Telegram className={classes.socialIc}  style={{color: 'deepskyblue'}}/>
                                 </a>
-                            </Typography>
-                            <Typography variant="body1"   align='center' color='textPrimary' >
-                                <PhoneIphone style={{color: 'darkblue'}}  />
-                                <a href="tel:+380669658925" className={classes.social} >+38-066-9658925</a>
                             </Typography>
                         </Paper>
                     </Grid>

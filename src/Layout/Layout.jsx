@@ -13,7 +13,7 @@ import {
     WhoIsRoute,
     EducationProgramRoute,
     HomeRoute,
-    AboutMeRoute, YogaRoute
+    AboutMeRoute, YogaRoute, NewsRoute
 } from '../Routing';
 import { Link } from "react-router-dom";
 import {
@@ -21,7 +21,7 @@ import {
     Create,
     DirectionsWalk,
     PhotoAlbum,
-    ContactMail, AudiotrackOutlined, PhoneIphone,
+    ContactMail, AudiotrackOutlined, PhoneIphone,NewReleasesOutlined
 } from "@material-ui/icons";
 // import { audio1 } from "../Pages/Projects/Projects";
 const drawerWidth = 250;
@@ -106,6 +106,14 @@ class Layout extends Component {
                     </ListItemIcon>
                     <ListItemText primary="О проекте" />
                 </ListItem>
+                    <ListItem
+                        button component={ Link } to={ NewsRoute }
+                        onClick={mobileOpen ? this.handleDrawerToggle : null}>
+                        <ListItemIcon>
+                            <NewReleasesOutlined className={classes.icon} />
+                        </ListItemIcon>
+                        <ListItemText primary="Новости" />
+                    </ListItem>
                     <ListItem
                         button component={Link} to={ AboutMeRoute }
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>

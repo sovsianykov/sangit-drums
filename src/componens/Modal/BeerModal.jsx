@@ -71,16 +71,16 @@ const Modal = ({active, setActive,}) => {
                                         />
                                         <input
                                             type='text'
-                                            name='message'
-                                            placeholder='ваше сообщение'
-                                            value={toSend.message}
+                                            name='reply_to'
+                                            placeholder='ваш email'
+                                            value={toSend.email}
                                             onChange={handleChange}
                                         />
                                         <input
                                             type='text'
-                                            name='reply_to'
-                                            placeholder='ваш email'
-                                            value={toSend.email}
+                                            name='message'
+                                            placeholder='ваше сообщение'
+                                            value={toSend.message}
                                             onChange={handleChange}
                                         />
                                         <Button type='submit' onClick={()=>handleClick()}>Отправить</Button>
