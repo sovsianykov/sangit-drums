@@ -113,7 +113,9 @@ class Layout extends Component {
             to={HomeRoute}
             onClick={mobileOpen ? this.handleDrawerToggle : null}
             className="logo-drawer"
-          ></ListItem>
+          >
+
+          </ListItem>
         </List>
         <List>
           <Divider />
@@ -162,6 +164,18 @@ class Layout extends Component {
             <ListItemText primary="Программы" />
           </ListItem>
           <ListItem
+              button
+              component={Link}
+              to={YogaRoute}
+              onClick={mobileOpen ? this.handleDrawerToggle : null}
+          >
+            <ListItemIcon>
+              <DescriptionOutlined className={classes.icon} />
+            </ListItemIcon>
+            <ListItemText primary="Барабанная йога" />
+          </ListItem>
+
+          <ListItem
             button
             // component={Link} to={VideoRoute}
             onClick={mobileOpen ? this.handleDrawerToggle : null}
@@ -193,17 +207,7 @@ class Layout extends Component {
             </ListItemIcon>
             <ListItemText primary="Фото" />
           </ListItem>
-          <ListItem
-            button
-            component={Link}
-            to={YogaRoute}
-            onClick={mobileOpen ? this.handleDrawerToggle : null}
-          >
-            <ListItemIcon>
-              <DescriptionOutlined className={classes.icon} />
-            </ListItemIcon>
-            <ListItemText primary="Барабанная йога" />
-          </ListItem>
+
           <ListItem
             button
             component={Link}

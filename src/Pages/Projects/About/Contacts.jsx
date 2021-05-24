@@ -99,13 +99,13 @@ const Contacts = () => {
                   />
                 </a>
 
-                <a href="https://www.youtube.com/channel/UCMVD_FDLnYj-Fb9zSM9lA_Q">
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCVyMFyl7pbN7Mwn-OcFZCaw%3Ffbclid%3DIwAR0BFm7tc4xGpCN7vJ0myQkaGOJzJi6DhLBVLF6Umbv3awGmWojkHT62598&h=AT3M64zyn5lBxOuRWxWfuruvPfdhoeXwmN0pjvM65_hPgkdM87NVi5IdLDEMjvID7Z38arFNi5qbspUx63UIhM4SsdOPoS8quqdCYuVqA69yBQcgB0ZrLKBn4EnnTPHfgzM">
                   <YouTube
                     className={classes.socialIc}
                     style={{ color: "red" ,  fontSize : "70px"}}
                   />
                 </a>
-                <a href="https://www.youtube.com/channel/UCMVD_FDLnYj-Fb9zSM9lA_Q">
+                <a href="tg://resolve?domain=sangitdrum">
                   <Telegram
                     className={classes.socialIc}
                     style={{ color: "deepskyblue", fontSize : "70px"}}
