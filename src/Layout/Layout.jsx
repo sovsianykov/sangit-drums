@@ -13,7 +13,7 @@ import {
     WhoIsRoute,
     EducationProgramRoute,
     HomeRoute,
-    AboutMeRoute, YogaRoute, NewsRoute
+    AboutMeRoute, YogaRoute, NewsRoute, NewNews
 } from '../Routing';
 import { Link } from "react-router-dom";
 import {
@@ -142,7 +142,7 @@ class Layout extends Component {
                     </ListItem>
                     <ListItem
                         button
-                        component={Link} to={ MusicRoute }
+                        component={ Link } to={ MusicRoute }
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
                             <AudiotrackOutlined className={classes.icon} />
@@ -151,7 +151,7 @@ class Layout extends Component {
                     </ListItem>
                     <ListItem
                         button
-                        component={Link} to={ PhotoRoute }
+                        component={ Link } to={ PhotoRoute }
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
                             < PhotoAlbum  className={classes.icon} />
@@ -159,7 +159,7 @@ class Layout extends Component {
                         <ListItemText primary="Фото" />
                     </ListItem>
                     <ListItem
-                        button component={Link} to={YogaRoute}
+                        button component={ Link } to={ YogaRoute }
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
                             <DescriptionOutlined className={classes.icon}/>
@@ -168,7 +168,7 @@ class Layout extends Component {
                     </ListItem>
                     <ListItem
                         button
-                        component={Link} to={ ContactsRoute }
+                        component={ Link } to={ ContactsRoute }
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
                             < ContactMail  className={classes.icon} />
@@ -176,7 +176,7 @@ class Layout extends Component {
                         <ListItemText primary="Контакты" />
                     </ListItem>
                     <ListItem style={{ marginTop : 10}}
-                        button component={Link} to='/new'
+                        button component={ Link } to={ NewNews }
                         onClick={mobileOpen ? this.handleDrawerToggle : null}>
                         <ListItemIcon>
                             {/*<NewReleasesOutlined className={classes.icon}  />*/}

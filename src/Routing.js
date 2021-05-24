@@ -25,7 +25,7 @@ export const AboutMeRoute = "/about/";
 export const ContactsRoute = "/contacts/";
 export const EducationProgramRoute = "/eProgram/";
 export const NewsRoute = "/news/";
-export const NewNews = "/news/";
+export const NewNews = "/new/";
 class Routing extends React.Component {
     render() {
         return (
