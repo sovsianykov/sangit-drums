@@ -42,12 +42,12 @@ class Routing extends React.Component {
                 <Route path={ YogaRoute } exact component={Yoga} />
                 <Route path={ ContactsRoute } exact component={Contacts} />
                 <Switch>
-                    <Route exact path="/main-articles">
-                        <Main/>
-                    </Route>
-                    <Route path="/article/:id">
-                        <ViewArticle/>
-                    </Route>
+                    {/*<Route exact path="/main-articles">*/}
+                    {/*    <Main/>*/}
+                    {/*</Route>*/}
+                    {/*<Route path="/article/:id">*/}
+                    {/*    <ViewArticle/>*/}
+                    {/*</Route>*/}
                     <Route path="/new">
                         <NewArticle/>
                     </Route>

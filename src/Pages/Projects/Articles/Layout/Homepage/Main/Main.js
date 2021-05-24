@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ArticleCard from "./../../../../../../componens/ArticeCard/ArticleCard";
+// import ArticleCard from "./../../../../../../componens/ArticeCard/ArticleCard";
+import ArticleCard2 from "./../../../../../../componens/ArticeCard/ArticleCard2";
 import firebase from "../../../Config/firebase";
 import "./style.scss";
 import { Grid } from "@material-ui/core";
@@ -40,8 +41,9 @@ const Main = () => {
       <Grid container justify="center" spacing={3}>
         {isLoaded
           ? articles.map((article, i) => (
-              <Grid item xs={12} sm={3} md={3} key={i}>
-                <ArticleCard data={article} />
+              <Grid item xs={12} sm={12} md={12} key={i}>
+                {/*<ArticleCard data={article} />*/}
+                  <ArticleCard2 article ={article}/>
               </Grid>
             ))
           : ""}

@@ -51,7 +51,7 @@ export default makeStyles((theme) => ({
     },
      settings : {
         width:'100%',
-        padding: 10,
+        padding: 20,
 
     },
     pic : {

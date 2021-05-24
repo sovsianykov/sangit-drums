@@ -46,13 +46,13 @@ export default makeStyles((theme) => ({
         marginTop : '20px'
     },
     price :{
-         marginBottom : '20px',
+         marginBottom : '10px',
         marginTop: '5%',
         width :'100%',
         color: '#585858',
         display: "block",
         textAlign: 'center',
-        fontSize : '25px',
+        fontSize : '20px',
         fontWeight : '500'
     },
     image: {
