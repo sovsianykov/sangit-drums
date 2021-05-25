@@ -11,8 +11,9 @@ import Photo from "./Pages/Projects/About/Photo";
 import WhoIs from './Pages/Projects/About/WhoIs';
 import AboutMe from "./Pages/Projects/About/AboutMe";
 import Layout from './Layout/Layout';
-import Main from "./Pages/Projects/Articles/Layout/Homepage/Main/Main";
-import ViewArticle from "./Pages/Projects/Articles/Layout/ViewArticle/ViewArtice";
+// import Main from "./Pages/Projects/Articles/Layout/Homepage/Main/Main";
+// import ViewArticle from "./Pages/Projects/Articles/Layout/ViewArticle/ViewArtice";
+import CurrentNews from "./Pages/Projects/About/CurrentNews";
 import NewArticle from "./Pages/Projects/Articles/Layout/NewArticle/NewArticle";
 import LoginPage from "./Pages/Projects/Articles/Layout/LoginPage]/LoginPage";
 export const HomeRoute = "/";
@@ -31,7 +32,7 @@ class Routing extends React.Component {
         return (
             <Layout>
                 <Route path={ HomeRoute } exact component={Home} />
-                <Route path={ NewsRoute } exact component={ Main } />
+                <Route path={ NewsRoute } exact component={ CurrentNews } />
                 <Route path={ NewNews } exact component={ NewArticle } />
                 <Route path={ ProjectsRoute } component={Projects} />
                 <Route path={ WhoIsRoute } exact component={WhoIs} />
