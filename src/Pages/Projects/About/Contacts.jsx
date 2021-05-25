@@ -67,19 +67,23 @@ const Contacts = () => {
                     value={toSend.reply_to}
                     onChange={handleChange}
                   />
-                  <input
-                    type="text"
+                  <textarea
+
                     name="message"
                     placeholder="ваше сообщение"
                     value={toSend.message}
                     onChange={handleChange}
                   />
-                  <Button type="submit">Отправить</Button>
+                  <Button  variant="contained"
+                           className={classes.btn}
+                           color="secondary" type="submit"
+                           style={{ marginTop: "20px" }}
+                  >Отправить</Button>
                 </form>
               </div>
               <Typography variant="body1" align="center" color="textPrimary">
-                <PhoneIphone style={{ color: "darkblue", marginTop: "20px" }} />
-                <a href="tel:+380669658925" className={classes.social}>
+                <PhoneIphone style={{ color: "black", marginTop: "40px" }} />
+                <a href="tel:+380669658925" className={classes.phone}>
                   +38-066-9658925
                 </a>
               </Typography>

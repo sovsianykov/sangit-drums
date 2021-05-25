@@ -5,9 +5,20 @@
   justify-content: space-between;
   input {
     display: block;
-    width: 300px;
-    height: 30px;
+    width: 400px;
+    height: 35px;
     margin-top: 10px;
+    font-size: 20px ;
+    padding-left: 10px ;
+  }
+  textarea {
+    @extend input;
+    width: 395px;
+    height: 90px;
+    font-size: 20px ;
+    padding: 10px ;
+
+
   }
 }
 

@@ -99,14 +99,23 @@ export default makeStyles((theme) => ({
     social : {
         fontSize: 20,
         color:"black",
-        letterSpacing : '.1rem'
+        letterSpacing : '.1rem',
+        position: 'relative',
+        top : '-20px'
+
+    },
+    phone : {
+        fontSize: 20,
+        color:"black",
+        letterSpacing : '.25rem'
+
     },
     socialIc : {
         fontSize: '70px',
         display: "inline-block",
         width : "70px",
         lineHeight: '70px',
-        margin : " 0 20px",
+        margin : " 20px 15px",
         letterSpacing : '.1rem'
     }
 
