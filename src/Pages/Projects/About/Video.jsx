@@ -6,8 +6,8 @@ import VideoPlayer from "./VideoPlayer/VideoPlayer";
 
 
 const videos = [
-    { id: 1 , src : 'https://www.youtube.com/watch?v=yl5qnhh1A3A', title : 'Сергей Табунщик - барабанщик'  },
-    { id: 2 , src : 'https://www.youtube.com/watch?v=vrvjr89K0Ps', title : 'Сергей Табунщик - преподаватель на ударных'  }
+    { id:  3, src : 'https://www.youtube.com/watch?v=yl5qnhh1A3A', title : 'Сергей Табунщик - барабанщик'  },
+    { id: 4 , src : 'https://www.youtube.com/watch?v=eyZ_CqetVg0&t=3s', title : 'Развитие рук. Постановка. Полный удар | Сергей Табунщик | Уроки на барабанах'  }
 ]
 
 const Video = () => {
