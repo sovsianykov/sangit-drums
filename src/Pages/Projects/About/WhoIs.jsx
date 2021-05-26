@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Box, Paper, Typography, Grid } from "@material-ui/core";
 import useStyles from "./styles";
-import aboutPr from "../../../assets/img/aboutPR.jpg";
+import aboutPr from "../../../assets/forGallery/thumbnail/03.jpg";
 
 const WhoIs = () => {
   const classes = useStyles();

@@ -16,7 +16,9 @@ import Layout from './Layout/Layout';
 import CurrentNews from "./Pages/Projects/About/CurrentNews";
 import NewArticle from "./Pages/Projects/Articles/Layout/NewArticle/NewArticle";
 import LoginPage from "./Pages/Projects/Articles/Layout/LoginPage]/LoginPage";
+import Video from "./Pages/Projects/About/Video";
 export const HomeRoute = "/";
+export const VideoRoute = "/video/";
 export const ProjectsRoute = "/projects/";
 export const WhoIsRoute = "/whois/";
 export const PhotoRoute = "/photo/";
@@ -32,6 +34,7 @@ class Routing extends React.Component {
         return (
             <Layout>
                 <Route path={ HomeRoute } exact component={Home} />
+                <Route path={ VideoRoute } exact component={Video} />
                 <Route path={ NewsRoute } exact component={ CurrentNews } />
                 <Route path={ NewNews } exact component={ NewArticle } />
                 <Route path={ ProjectsRoute } component={Projects} />

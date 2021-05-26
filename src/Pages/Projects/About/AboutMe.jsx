@@ -3,8 +3,8 @@ import * as React from 'react';
 import {Box, Paper, Typography,Grid} from "@material-ui/core";
 import useStyles from './styles'
 import VideoPlayer from "./VideoPlayer/VideoPlayer";
-import {audio1} from '../Projects'
-import {useEffect} from "react";
+
+
 import ava from "../../../assets/forGallery/avatab.jpg";
 
 
@@ -15,11 +15,7 @@ const videos = [
 
 const AboutMe = () => {
     const classes = useStyles()
-    useEffect(()=>{
 
-        audio1.pause()
-
-    })
 
     return (
         <Box>

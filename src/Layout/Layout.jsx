@@ -21,6 +21,7 @@ import { withStyles } from "@material-ui/core/styles";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import {
   ContactsRoute,
+  VideoRoute,
   MusicRoute,
   PhotoRoute,
   WhoIsRoute,
@@ -177,7 +178,7 @@ class Layout extends Component {
 
           <ListItem
             button
-            // component={Link} to={VideoRoute}
+            component={Link} to={VideoRoute}
             onClick={mobileOpen ? this.handleDrawerToggle : null}
           >
             <ListItemIcon>
