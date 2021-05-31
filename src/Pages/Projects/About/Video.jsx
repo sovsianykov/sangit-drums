@@ -9,9 +9,11 @@ import YoutubeEmbed from "./YoutubeEmbed/YoutubeEmbed";
 
 const videos2 = [
 
-    { id: 1 , src : 'eyZ_CqetVg0', title : 'Развитие рук. Постановка. Полный удар | Сергей Табунщик | Уроки на барабанах'  },
+
+    { id:  3, src : 'n-uaGbmDR_Y', title : 'Четыре вида ударов | Full Down Tap Up | Сергей Табунщик | Уроки на барабанах'  },
     { id:  2, src : 'Y78vuA-liQc', title : 'Удары кистями | Open Close | Сергей Табунщик | Уроки на барабанах.'  },
-    { id:  3, src : 'n-uaGbmDR_Y', title : 'Четыре вида ударов | Full Down Tap Up | Сергей Табунщик | Уроки на барабанах'  }
+    { id: 1 , src : 'eyZ_CqetVg0', title : 'Развитие рук. Постановка. Полный удар | Сергей Табунщик | Уроки на барабанах'  },
+
 ]
 
 const Video = () => {
