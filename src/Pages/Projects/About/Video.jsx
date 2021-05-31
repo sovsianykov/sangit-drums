@@ -2,13 +2,16 @@
 import * as React from 'react';
 import {Box, Paper, Typography,Grid} from "@material-ui/core";
 import useStyles from './styles'
-import VideoPlayer from "./VideoPlayer/VideoPlayer";
+// import VideoPlayer from "./VideoPlayer/VideoPlayer";
+import "./YoutubeEmbed/styles.css";
+import YoutubeEmbed from "./YoutubeEmbed/YoutubeEmbed";
 
 
 const videos2 = [
-    { id:  1, src : 'https://www.youtube.com/watch?v=yl5qnhh1A3A', title : 'Сергей Табунщик - барабанщик'  },
-    { id: 2 , src : 'https://www.youtube.com/watch?v=eyZ_CqetVg0&t=3s', title : 'Развитие рук. Постановка. Полный удар | Сергей Табунщик | Уроки на барабанах'  },
 
+    { id: 1 , src : 'eyZ_CqetVg0', title : 'Развитие рук. Постановка. Полный удар | Сергей Табунщик | Уроки на барабанах'  },
+    { id:  2, src : 'Y78vuA-liQc', title : 'Удары кистями | Open Close | Сергей Табунщик | Уроки на барабанах.'  },
+    { id:  3, src : 'n-uaGbmDR_Y', title : 'Четыре вида ударов | Full Down Tap Up | Сергей Табунщик | Уроки на барабанах'  }
 ]
 
 const Video = () => {
@@ -24,10 +27,11 @@ const Video = () => {
                             <Typography variant="h4" className={classes.title}>
                                 Видеоуроки
                             </Typography>
-                                <Grid container spacing={1} justify='center' className={classes.videos}>
-                                    {videos2.map((video) => (
-                                        <Grid item xs={12} sm={6} key={video.id}>
-                                            <VideoPlayer video = {video}/>
+                                <Grid container spacing={2} justify='space-around' className={classes.videos}>
+                                    {videos2.map((video,i) => (
+                                        <Grid item xs={12} sm={4} key={i}>
+                                            {/*<VideoPlayer video = {video}/>*/}
+                                            <YoutubeEmbed embedId={video.src} />
                                         </Grid>
                                     ))}
                                 </Grid>

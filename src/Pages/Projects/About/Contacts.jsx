@@ -5,7 +5,7 @@ import useStyles from "./styles";
 import { send } from "emailjs-com";
 import { init } from "emailjs-com";
 import "./form.scss";
-import { Facebook, PhoneIphone, Telegram, YouTube } from "@material-ui/icons";
+import {Facebook, Instagram, PhoneIphone, Telegram, YouTube} from "@material-ui/icons";
 
 const Contacts = () => {
   init("user_qgNbbhNEOZCqVam1h08VN");
@@ -113,6 +113,12 @@ const Contacts = () => {
                   <Telegram
                     className={classes.socialIc}
                     style={{ color: "deepskyblue", fontSize : "70px"}}
+                  />
+                </a>
+                <a href="https://www.instagram.com/sangit_drum/">
+                  <Instagram
+                      className={classes.socialIc}
+                      style={{ color: "purple", fontSize : "70px"}}
                   />
                 </a>
               </Typography>
