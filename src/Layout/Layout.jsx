@@ -90,6 +90,12 @@ const styles = (theme) => ({
   icon: {
     color: "#fefefe",
   },
+  dev : {
+    color: "#c1c1c1",
+    position : "absolute",
+    bottom : 20,
+    left : 20
+  },
   toolbar: theme.mixins.toolbar,
 });
 class Layout extends Component {
@@ -230,17 +236,15 @@ class Layout extends Component {
             <ListItemIcon>
               {/*<NewReleasesOutlined className={classes.icon}  />*/}
             </ListItemIcon>
-            <ListItemText secondary="post" />
+            {/*<ListItemText secondary="post" />*/}
           </ListItem>
-          {/*<ListItem style={{ marginTop : 10, cursor : 'pointer'}}*/}
-
-          {/*          onClick={this.handleSoundOff}>*/}
-          {/*    <ListItemIcon>*/}
-          {/*        < VolumeOff className={classes.icon}  />*/}
-          {/*    </ListItemIcon>*/}
-          {/*    <ListItemText  primary="sound-off"   />*/}
-          {/*</ListItem>*/}
+            <ListItem >
+          </ListItem>
         </List>
+        <a href="https://ovsianykov-react-portfolio.netlify.app/" className={classes.dev}>
+          developed by<br/>
+          S Ovsianykov
+        </a>
       </div>
     );
     return (
