@@ -68,17 +68,20 @@ const Contacts = () => {
                     onChange={handleChange}
                   />
                   <textarea
-
                     name="message"
                     placeholder="ваше сообщение"
                     value={toSend.message}
                     onChange={handleChange}
                   />
-                  <Button  variant="contained"
-                           className={classes.btn}
-                           color="secondary" type="submit"
-                           style={{ marginTop: "20px" }}
-                  >Отправить</Button>
+                  <Button
+                    variant="contained"
+                    className={classes.btn}
+                    color="secondary"
+                    type="submit"
+                    style={{ marginTop: "20px" }}
+                  >
+                    Отправить
+                  </Button>
                 </form>
               </div>
               <Typography variant="body1" align="center" color="textPrimary">
@@ -99,26 +102,26 @@ const Contacts = () => {
                 <a href="https://www.facebook.com/sangitdrum">
                   <Facebook
                     className={classes.socialIc}
-                    style={{ color: "blue" ,  fontSize : "70px"}}
+                    style={{ color: "blue", fontSize: "70px" }}
                   />
                 </a>
 
                 <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCVyMFyl7pbN7Mwn-OcFZCaw%3Ffbclid%3DIwAR0BFm7tc4xGpCN7vJ0myQkaGOJzJi6DhLBVLF6Umbv3awGmWojkHT62598&h=AT3M64zyn5lBxOuRWxWfuruvPfdhoeXwmN0pjvM65_hPgkdM87NVi5IdLDEMjvID7Z38arFNi5qbspUx63UIhM4SsdOPoS8quqdCYuVqA69yBQcgB0ZrLKBn4EnnTPHfgzM">
                   <YouTube
                     className={classes.socialIc}
-                    style={{ color: "red" ,  fontSize : "70px"}}
+                    style={{ color: "red", fontSize: "70px" }}
                   />
                 </a>
                 <a href="tg://resolve?domain=sangitdrum">
                   <Telegram
                     className={classes.socialIc}
-                    style={{ color: "deepskyblue", fontSize : "70px"}}
+                    style={{ color: "deepskyblue", fontSize: "70px" }}
                   />
                 </a>
                 <a href="https://www.instagram.com/sangit_drum/">
                   <Instagram
-                      className={classes.socialIc}
-                      style={{ color: "purple", fontSize : "70px"}}
+                    className={classes.socialIc}
+                    style={{ color: "purple", fontSize: "70px" }}
                   />
                 </a>
               </Typography>

@@ -90,12 +90,7 @@ const styles = (theme) => ({
   icon: {
     color: "#fefefe",
   },
-  dev : {
-    color: "#c1c1c1",
-    position : "absolute",
-    bottom : 20,
-    left : 20
-  },
+
   toolbar: theme.mixins.toolbar,
 });
 class Layout extends Component {
@@ -239,12 +234,10 @@ class Layout extends Component {
             {/*<ListItemText secondary="post" />*/}
           </ListItem>
             <ListItem >
+
           </ListItem>
         </List>
-        <a href="https://ovsianykov-react-portfolio.netlify.app/" className={classes.dev}>
-          developed by<br/>
-          S Ovsianykov
-        </a>
+
       </div>
     );
     return (
