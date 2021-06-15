@@ -6,6 +6,11 @@ import "./YoutubeEmbed/styles.css";
 import YoutubeEmbed from "./YoutubeEmbed/YoutubeEmbed";
 
 const videos2 = [
+  {
+    id: 6,
+    src: "bt8xp5uPgCA",
+    title: "Двойные удары | Сергей Табунщик | Уроки на барабанах",
+  },
     {
         id: 5,
         src: "-fjNuZRtNAI",
