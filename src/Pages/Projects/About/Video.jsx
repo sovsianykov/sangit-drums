@@ -6,6 +6,17 @@ import "./YoutubeEmbed/styles.css";
 import YoutubeEmbed from "./YoutubeEmbed/YoutubeEmbed";
 
 const videos2 = [
+
+  {
+    id: 8,
+    src: "qd8rA8J9OqQ",
+    title: "Как заниматься над ритмами | Сергей Табунщик | Уроки на барабанах",
+  },
+  {
+    id: 7,
+    src: "s3w4UfPPMsE",
+    title: "Чередование длительностей | Сохранение темпа | Сергей Табунщик | Уроки на барабанах",
+  },
   {
     id: 6,
     src: "bt8xp5uPgCA",
